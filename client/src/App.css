@@ -1,38 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Luckiest+Guy&family=Orbitron:wght@600&family=Press+Start+2P&display=swap');
+
+html, body, #root {
+    height: 100%;
+}
+
+/* .Transition_inner:after {
+    content: "";
+    top: -100%;
+    left: -50%;
+    width: 500%;
+    height: 500%;
+    position: fixed;
+    background-color: #0063B2FF;
+    background-image: url('./img/background_2.png');
+    opacity: 0.5;
+    animation: transition_inner 1s steps(3);
+    z-index: 4;
+}
+
+@keyframes transition_inner {
+    0% { transform:translate(-70%, -20%) }
+    50% { transform:translate(0%, 10%) }
+    100% { opacity: 0 }
+}
+
+.Transition_outer:after {
+    content: "";
+    top: -100%;
+    left: -50%;
+    width: 300%;
+    height: 300%;
+    position: fixed;
+    background-color: #0063B2FF;
+    background-image: url('./img/background_5.png');
+    mix-blend-mode: darken;
+    opacity: 0.5;
+    animation: transition_outer 1s steps(3);
+    z-index: 5;
+}
+
+@keyframes transition_outer {
+    0% { transform:translate(-20%, -30%) }
+    50% { transform:translate(0%, 20%) }
+} */
+
 .App {
-  text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #89ABE3FF;
+    background-color: #0063B2FF;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Press Start 2P', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App:after {
+    content: "";
+    top: -100%;
+    left: -50%;
+    width: 300%;
+    height: 300%;
+    position: fixed;
+    background-image: url('./img/background.png');
+    opacity: 0.5;
+    animation: universe 30s steps(11) infinite;
+    z-index: 2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes universe {
+    0% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, 5%) }
+    20% { transform:translate(10%, -5%) }
+    30% { transform:translate(5%, 10%) }
+    40% { transform:translate(-10%, 5%) }
+    50% { transform:translate(5%, 10%) }
+    60% { transform:translate(10%, -5%) }
+    70% { transform:translate(-10%, 0%) }
+    80% { transform:translate(5%, -5%) }
+    90% { transform:translate(-15%, 10%) }
+    100% { transform:translate(5%, 15%) }
 }
