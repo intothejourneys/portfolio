@@ -55,11 +55,11 @@ import cursor_2 from '../img/cursor_2.cur';
 
   const blink = keyframes`
     0% {
-        // color: #FFFFCC;
+        // color: #FFF0CF;
         opacity: 100%
     }
     50% {
-        // color: #FFFFCC;
+        // color: #FFF0CF;
         opacity: 30%
     }
   `;
@@ -70,12 +70,12 @@ import cursor_2 from '../img/cursor_2.cur';
     transform: translate(-50%, -50%);
     vertical-align: middle;
     position:absolute;
-    color: #89ABE3FF;
+    color: #FCF6F5FF;
     font-size: 25px;
     font-weight: 200;
     font-family: 'Press Start 2P', cursive;
     cursor: url(${cursor_2}), auto;
-    animation: ${GoingUp} 2.5s steps(2)
+    animation: ${GoingUp} 2.4s steps(2) // 11로 하면 smooth하게 올라감
     // animation: ${blink} 0.1s steps(2) infinite;
 `;
 

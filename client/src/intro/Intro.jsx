@@ -31,15 +31,15 @@ const IntroText = styled.p`
     left: 50%;
     transform: translate(-50%, -50%);
     vertical-align: middle;
-    position:absolute;
-    color: #89ABE3FF;
+    position: absolute;
+    color: #FCF6F5FF;
     font-size: 25px;
     font-weight: 200;
     font-family: 'Press Start 2P', cursive;
     cursor: url(${cursor_2}), auto;
     
     &:hover {
-        color: #FFFFCC;
+        color: #FFF0CF;
         animation: ${blink} 0.1s steps(2) infinite;
     }
 `;

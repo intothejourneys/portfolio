@@ -21,6 +21,9 @@ const NavWrapper = styled.div`
     height: 83%;
     position: absolute;
     display: table;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Press Start 2P', cursive;
     border: 3px solid;
     border-radius: 5px;
     border-color: transparent;
@@ -44,7 +47,7 @@ const Planet1Img = styled.div`
     height: 90px;
     margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: 40px;
+    margin-left: 45px;
     background-image: url(${planet_1});
     background-repeat: no-repeat;
     transition: transform 0.5s;
@@ -58,13 +61,15 @@ const Planet1Img = styled.div`
 `;
 
 const Planet1Text = styled.div`
-    color: #89ABE3FF;
+    color: #FCF6F5FF;
     margin-left: 30px;
     transform: translateY(45%);
     cursor: url(${cursor_2}), auto;
 
     &:hover {
-        color: #ffffff
+        color: #FFF0CF;
+        margin-left: 29.4px;
+        transform: translateY(44%);
     }
 `;
 
@@ -78,7 +83,7 @@ const Planet2Img = styled.div`
     height: 90px;
     margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: 40px;
+    margin-left: 45px;
     background-image: url(${planet_2});
     background-repeat: no-repeat;
     transition: transform 0.5s;
@@ -92,13 +97,15 @@ const Planet2Img = styled.div`
 `;
 
 const Planet2Text = styled.div`
-    color: #89ABE3FF;
+    color: #FCF6F5FF;
     margin-left: 30px;
     transform: translateY(45%);
     cursor: url(${cursor_2}), auto;
 
     &:hover {
-        color: #ffffff
+        color: #FFF0CF;
+        margin-left: 29.4px;
+        transform: translateY(44%);
     }
 `;
 
@@ -112,7 +119,7 @@ const Planet3Img = styled.div`
     height: 90px;
     margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: 40px;
+    margin-left: 45px;
     background-image: url(${planet_3});
     background-repeat: no-repeat;
     transition: transform 0.5s;
@@ -126,13 +133,15 @@ const Planet3Img = styled.div`
 `;
 
 const Planet3Text = styled.div`
-    color: #89ABE3FF;
+    color: #FCF6F5FF;
     margin-left: 40px;
     transform: translateY(45%);
     cursor: url(${cursor_2}), auto;
 
     &:hover {
-        color: #ffffff
+        color: #FFF0CF;
+        margin-left: 39.4px;
+        transform: translateY(44%);
     }
 `;
 
@@ -146,7 +155,7 @@ const Planet4Img = styled.div`
     height: 90px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left: 45px;
     background-image: url(${planet_4});
     background-repeat: no-repeat;
     transition: transform 0.5s;
@@ -160,13 +169,15 @@ const Planet4Img = styled.div`
 `;
 
 const Planet4Text = styled.div`
-    color: #89ABE3FF;
+    color: #FCF6F5FF;
     margin-left: 10px;
     transform: translateY(45%);
     cursor: url(${cursor_2}), auto;
 
     &:hover {
-        color: #ffffff
+        color: #FFF0CF;
+        margin-left: 9.8px;
+        transform: translateY(44%);
     }
 `;
 
