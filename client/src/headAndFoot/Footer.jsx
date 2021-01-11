@@ -20,7 +20,7 @@ const FooterWrapper = styled.div`
 const FooterText = styled.p`
     vertical-align: center;
     text-align: center;
-    color: #89ABE3FF;
+    color: #FCF6F5FF;
     font-size: 15px;
     font-weight: 700;
     font-family: 'Josefin Slab', serif;

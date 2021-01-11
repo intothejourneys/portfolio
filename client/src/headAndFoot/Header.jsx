@@ -16,7 +16,7 @@ const HeaderWrapper = styled.div`
     border-color: transparent;
     background-color: transparent;
     cursor: url(${cursor_1}), auto;
-    z-index: 3;
+    z-index: 15;
 `;
 
 const HeaderText = styled.p`
@@ -25,7 +25,7 @@ const HeaderText = styled.p`
     transform: translate(-50%, -50%);
     vertical-align: middle;
     position:absolute;
-    color: #89ABE3FF;
+    color: #FCF6F5FF;
     font-size: 25px;
     font-weight: 200;
     font-family: 'Press Start 2P', cursive;
@@ -33,7 +33,7 @@ const HeaderText = styled.p`
     cursor: url(${cursor_2}), auto;
 
     &:hover {
-        color: #FFFFCC;
+        color: #FFF0CF;
     }
 `;
 
