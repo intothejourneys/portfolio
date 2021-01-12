@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 import './App.css';
+import './Theme.css';
+
 import Intro from './intro/Intro';
 import IntroCopy from './intro/IntroCopy';
 import Header from './headAndFoot/Header';
@@ -47,9 +49,19 @@ export default function App() {
     setChooseIntro(copy());
   }
 
+  const [theme, setTheme] = useState('light');
+
+  const onThemeToDarkHandler = () => {
+    setTheme('dark');
+  };
+
+  const onThemeToLightHandler = () => {
+    setTheme('light');
+  };
+
   if (fold === false) {
     return (
-      <div className='App'>
+      <div className={`App ${theme}`}>
         {chooseIntro}
         {/* <Intro onFoldHandler={onFoldHandler} /> */}
         <Footer />
@@ -59,11 +71,11 @@ export default function App() {
     return (
       // <div className='Transition_outer'>
       //   <div className='Transition_inner'>
-          <div className='App'>
+          <div className={`App ${theme}`}>
             <Header />
             <div>
               <Nav />
-              <Content />
+              <Content theme={theme} onThemeToDarkHandler={onThemeToDarkHandler} onThemeToLightHandler={onThemeToLightHandler} />
             </div>
             <Footer />
           </div>

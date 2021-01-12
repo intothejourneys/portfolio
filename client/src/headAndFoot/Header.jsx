@@ -37,10 +37,6 @@ const HeaderText = styled.p`
     }
 `;
 
-// 마우스 오버 이벤트
-// 트랜지션
-// 기타 이벤트
-
 export default function Header() {
     return (
         <HeaderWrapper>
