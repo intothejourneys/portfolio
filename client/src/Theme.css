@@ -1,0 +1,9 @@
+.light {
+    --theme-page-background: #9CC3D5FF;
+    --theme-page-opacity: 1;
+}
+
+.dark {
+    --theme-page-background: rgb(14, 69, 114);
+    --theme-page-opacity: 0.5;
+}

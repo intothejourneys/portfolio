@@ -3,7 +3,6 @@ import { Route } from 'react-router-dom';
 
 import styled from 'styled-components';
 
-import Intro from '../intro/Intro';
 import ContentMain from '../body/ContentMain';
 import ContentAbout from '../body/ContentAbout';
 import ContentSkills from '../body/ContentSkills';
@@ -11,7 +10,6 @@ import ContentWorks from '../body/ContentWorks';
 import ContentContact from '../body/ContentContact';
 
 import cursor_1 from '../img/cursor_1.cur';
-// 별똥별????
 
 const ContentWrapper = styled.div`
     top: 10%;
@@ -27,10 +25,16 @@ const ContentWrapper = styled.div`
     z-index: 3;
 `;
 
-export default function Content() {
+export default function Content({ theme, onThemeToDarkHandler, onThemeToLightHandler }) {
     return (
         <ContentWrapper>
-            <Route path="/" exact={true} component={ContentMain} />
+            <Route 
+                path="/" 
+                exact={true} 
+                render={() => 
+                    <ContentMain theme={theme} onThemeToDarkHandler={onThemeToDarkHandler} onThemeToLightHandler={onThemeToLightHandler} />
+                } 
+            />
             <Route path="/about" component={ContentAbout} />
             <Route path="/skills" component={ContentSkills} />
             <Route path="/works" component={ContentWorks} />

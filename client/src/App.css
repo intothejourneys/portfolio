@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Fugaz+One&family=Jua&family=Luckiest+Guy&family=Orbitron:wght@600&family=Press+Start+2P&family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Fugaz+One&family=Jua&family=Luckiest+Guy&family=Orbitron:wght@600&family=Press+Start+2P&family=Stylish&family=Poor+Story&family=Sunflower:wght@300&display=swap');
 
-html, body, #root {
-    height: 100%;
-}
+html, body, #root { height: 100% }
 
 /* .Transition_inner:after {
     content: "";
@@ -48,7 +46,8 @@ html, body, #root {
     width: 100%;
     height: 100%;
     color: #FCF6F5FF;
-    background-color: #9CC3D5FF;
+    background-color: var(--theme-page-background);
+    /* background-color: #00539CFF; */
     font-family: 'Black Han Sans', sans-serif;
     font-family: 'Fugaz One', cursive;
     font-family: 'Jua', sans-serif;
@@ -56,6 +55,8 @@ html, body, #root {
     font-family: 'Orbitron', sans-serif;
     font-family: 'Press Start 2P', cursive;
     font-family: 'Stylish', sans-serif;
+    font-family: 'Poor Story', cursive;
+    font-family: 'Sunflower', sans-serif;
 }
 
 .App:after {
@@ -66,7 +67,7 @@ html, body, #root {
     height: 300%;
     position: fixed;
     background-image: url('./img/background.png');
-    opacity: 1;
+    opacity: var(--theme-page-opacity);
     animation: universe 30s steps(11) infinite;
     z-index: 2;
 }

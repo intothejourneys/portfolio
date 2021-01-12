@@ -11,30 +11,27 @@ import sateliteWing2Shadow from '../img/satelite_wing_2_shadowCut.png';
 import sunlight from '../img/sunlight.png';
 
 import cursor_1 from '../img/cursor_1.cur';
+import cursor_2 from '../img/cursor_2.cur';
 
 const MainWrapper = styled.div`
     cursor: url(${cursor_1}), auto; // 여기가 아니라 Content에 넣어주어야 적용됨
 `;
 
 const Desolve = keyframes`
-    0% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
+    0% { opacity: 0% }
+    100% { opacity: 100% }
 `;
 
 const SateliteWrapper = styled.div`
     & {
-        animation: ${Desolve} 2s steps(2);
+        animation: ${Desolve} 2s ease;
         animation-timing-function: ease;
         cursor: url(${cursor_1}), auto;
     }
 
     &:before {
         content: "";
-        width: 1350px;
+        width: 1360px;
         height: 950px;
         top: -100px;
         left: 0px;
@@ -43,20 +40,19 @@ const SateliteWrapper = styled.div`
         background-repeat: no-repeat;
     }
 `;
-// 언제나 더 좋은 방법은 있다, 찝찝하다면 더 찾고 시도할 것!
 
 const SateliteMovement = keyframes`
-    0% { transform: translate(0, 0)}
-    10% { transform: translate(-4px, 0)}
-    20% { transform: translate(-6px, -2px)}
-    30% { transform: translate(-4px, -4px)}
-    40% { transform: translate(-2px, -2px)}
-    50% { transform: translate(0, 0)} 
-    60% { transform: translate(2px, 2px)}
-    70% { transform: translate(4px, 0)}
-    80% { transform: translate(2px, -2px)}
-    90% { transform: translate(0, 2px)}
-    100% { transform: translate(0, 0)}
+    0% { transform: translate(0, 0) }
+    10% { transform: translate(-4px, 0) }
+    20% { transform: translate(-6px, -2px) }
+    30% { transform: translate(-4px, -4px) }
+    40% { transform: translate(-2px, -2px) }
+    50% { transform: translate(0, 0) } 
+    60% { transform: translate(2px, 2px) }
+    70% { transform: translate(4px, 0) }
+    80% { transform: translate(2px, -2px) }
+    90% { transform: translate(0, 2px) }
+    100% { transform: translate(0, 0) }
 `;
 
 const Satelite = styled.div`
@@ -68,8 +64,8 @@ const Satelite = styled.div`
 const SateliteBody = styled.div`
     width: 200px;
     height: 200px;
-    margin-top: 280px;
-    margin-left: 250px;
+    margin-top: 300px;
+    margin-left: 300px;
     background-image: url(${sateliteBody});
     background-repeat: no-repeat;
     position: absolute;
@@ -95,8 +91,8 @@ const HeadMove = keyframes`
 const SateliteHead = styled.div`
     width: 150px;
     height: 150px;
-    top: 187px;
-    left: 345px;
+    top: 207px;
+    left: 395px;
     background-image: url(${sateliteHead});
     background-repeat: no-repeat;
     position: absolute;
@@ -144,16 +140,16 @@ const SateliteHead = styled.div`
 const SateliteWing1 = styled.div`
     width: 200px;
     height: 210px;
-    top: 187px;
-    left: 140px;
+    top: 207px;
+    left: 190px;
     background-image: url(${sateliteWing1});
     background-repeat: no-repeat;
     position: absolute;
     z-index: 11;
 
     &:hover {
-        top: 170px;
-        left: 110px;
+        top: 190px;
+        left: 160px;
         background-image: url(${sateliteWing2Shadow});
     }
 `;
@@ -161,32 +157,32 @@ const SateliteWing1 = styled.div`
 const SateliteWing2 = styled.div`
     width: 200px;
     height: 215px;
-    top: 375px;
-    left: 357px;
+    top: 395px;
+    left: 407px;
     background-image: url(${sateliteWing1});
     background-repeat: no-repeat;
     position: absolute;
     z-index: 11;
 
     &:hover {
-        top: 370px;
-        left: 305px;
+        top: 390px;
+        left: 355px;
         background-image: url(${sateliteWing2});
     }
 `;
 
 const TextMovement = keyframes`
-    0% { transform: translate(0, 0)}
-    10% { transform: translate(-4px, 0)}
-    20% { transform: translate(-6px, -2px)}
-    30% { transform: translate(-4px, -4px)}
-    40% { transform: translate(-2px, -2px)}
-    50% { transform: translate(0, 0)} 
-    60% { transform: translate(2px, 2px)}
-    70% { transform: translate(4px, 0)}
-    80% { transform: translate(2px, -2px)}
-    90% { transform: translate(0, 2px)}
-    100% { transform: translate(0, 0)}
+    0% { transform: translate(0, 0) }
+    10% { transform: translate(-4px, 0) }
+    20% { transform: translate(-6px, -2px) }
+    30% { transform: translate(-4px, -4px) }
+    40% { transform: translate(-2px, -2px) }
+    50% { transform: translate(0, 0) } 
+    60% { transform: translate(2px, 2px) }
+    70% { transform: translate(4px, 0) }
+    80% { transform: translate(2px, -2px) }
+    90% { transform: translate(0, 2px) }
+    100% { transform: translate(0, 0) }
 `;
 
 const TextWrapper = styled.div`
@@ -198,8 +194,8 @@ const TextWrapper = styled.div`
 const MainText = styled.div`
     width: 600px;
     height: 100px;
-    margin-top: 300px;
-    margin-left: 600px;
+    margin-top: 320px;
+    margin-left: 650px;
     color: #FCF6F5FF;
     font-size: 40px;
     font-weight: 200;
@@ -226,21 +222,88 @@ const MainText = styled.div`
 //     z-index: 5;
 // `;
 
-export default function ContentMain() {
-    return (
-        <MainWrapper>
-            <SateliteWrapper>
-                <Satelite>
-                    <SateliteBody/>
-                    <SateliteHead/>
-                    <SateliteWing1/>
-                    <SateliteWing2/>
-                </Satelite>
-            </SateliteWrapper>
-            <TextWrapper>
-                <MainText>색다르면서도 편안한 경험을 설계하는<br/>프론트엔드 개발자 권은정 입니다</MainText>
-                {/* <MainTextShadow /> */}
-            </TextWrapper>
-        </MainWrapper>
-    );
+const ThemeToDarkButton = styled.button`
+    top: 750px;
+    left: 1300px;
+    width: 120px;
+    height: 33px;
+    font-size: 18px;
+    font-family: 'Poor Story', cursive;
+    color: #FCF6F5FF;
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: rgb(14, 69, 114);
+    background-color: rgb(14, 69, 114);
+    position: absolute;
+    outline: 0;
+    cursor: url(${cursor_2}), auto;
+    z-index: 20;
+
+    &:hover {
+        width: 124px;
+        height: 34px;
+    }
+`;
+
+const ThemeToLightButton = styled.button`
+    top: 750px;
+    left: 1300px;
+    width: 120px;
+    height: 33px;
+    font-size: 18px;
+    font-family: 'Poor Story', cursive;
+    color: #FCF6F5FF;
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: #9CC3D5FF;
+    background-color: #9CC3D5FF;
+    position: absolute;
+    outline: 0;
+    cursor: url(${cursor_2}), auto;
+    z-index: 20;
+
+    &:hover {
+        width: 124px;
+        height: 34px;
+    }
+`;
+
+export default function ContentMain({ theme, onThemeToDarkHandler, onThemeToLightHandler }) {
+    if (theme === 'light') {
+        return (
+            <MainWrapper>
+                <ThemeToDarkButton onClick={onThemeToDarkHandler}>🌙 Dark Mode</ThemeToDarkButton>
+                <SateliteWrapper>
+                    <Satelite>
+                        <SateliteBody/>
+                        <SateliteHead/>
+                        <SateliteWing1/>
+                        <SateliteWing2/>
+                    </Satelite>
+                </SateliteWrapper>
+                <TextWrapper>
+                    <MainText>색다르면서도 편안한 경험을 설계하는<br/>프론트엔드 개발자 권은정 입니다</MainText>
+                    {/* <MainTextShadow /> */}
+                </TextWrapper>
+            </MainWrapper>
+        );
+    } else if (theme === 'dark') {
+        return (
+            <MainWrapper>
+                <ThemeToLightButton onClick={onThemeToLightHandler}>☀️ Light Mode</ThemeToLightButton>
+                <SateliteWrapper>
+                    <Satelite>
+                        <SateliteBody/>
+                        <SateliteHead/>
+                        <SateliteWing1/>
+                        <SateliteWing2/>
+                    </Satelite>
+                </SateliteWrapper>
+                <TextWrapper>
+                    <MainText>색다르면서도 편안한 경험을 설계하는<br/>프론트엔드 개발자 권은정 입니다</MainText>
+                    {/* <MainTextShadow /> */}
+                </TextWrapper>
+            </MainWrapper>
+        );
+    }
 }

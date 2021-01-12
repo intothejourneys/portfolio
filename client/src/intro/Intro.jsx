@@ -18,12 +18,8 @@ const IntroWrapper = styled.div`
 `;
 
 const blink = keyframes`
-    0% {
-        opacity: 100%
-    }
-    50% {
-        opacity: 30%
-    }
+    0% { opacity: 100% }
+    50% { opacity: 30% }
 `;
 
 const IntroText = styled.p`
