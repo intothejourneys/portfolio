@@ -29,7 +29,7 @@ const NavWrapper = styled.div`
     border-color: transparent;
     background-color: transparent;
     cursor: url(${cursor_1}), auto;
-    z-index: 3;
+    z-index: 15;
 `;
 
 const PlanetWrapper = styled.div`
@@ -61,7 +61,10 @@ const Planet1Img = styled.div`
 `;
 
 const Planet1Text = styled.div`
+    width: 20px;
+    height: 10px;
     color: #FCF6F5FF;
+    margin-top: 45px;
     margin-left: 30px;
     transform: translateY(45%);
     cursor: url(${cursor_2}), auto;
@@ -97,7 +100,10 @@ const Planet2Img = styled.div`
 `;
 
 const Planet2Text = styled.div`
+    width: 20px;
+    height: 10px;
     color: #FCF6F5FF;
+    margin-top: 45px;
     margin-left: 30px;
     transform: translateY(45%);
     cursor: url(${cursor_2}), auto;
@@ -133,7 +139,10 @@ const Planet3Img = styled.div`
 `;
 
 const Planet3Text = styled.div`
+    width: 20px;
+    height: 10px;
     color: #FCF6F5FF;
+    margin-top: 45px;
     margin-left: 40px;
     transform: translateY(45%);
     cursor: url(${cursor_2}), auto;
@@ -169,7 +178,10 @@ const Planet4Img = styled.div`
 `;
 
 const Planet4Text = styled.div`
+    width: 20px;
+    height: 10px;
     color: #FCF6F5FF;
+    margin-top: 45px;
     margin-left: 10px;
     transform: translateY(45%);
     cursor: url(${cursor_2}), auto;

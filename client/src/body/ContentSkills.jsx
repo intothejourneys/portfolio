@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styled, { keyframes } from 'styled-components';
 
@@ -29,12 +29,24 @@ import flagFourthHover from '../img/flag_flag_4_hover.png';
 import flagFifthHover from '../img/flag_flag_5_hover.png';
 import shadow from '../img/bar_shadow.png';
 import shadow2 from '../img/body_shadow.png';
+import footMove from '../img/footmove.png';
+import jsBubble from '../img/js_bubble.png';
+import htmlBubble from '../img/html_bubble.png';
+import reactBubble from '../img/react_bubble.png';
+import nodeBubble from '../img/node_bubble.png';
+import etcBubble from '../img/etc_bubble.png';
 
 import cursor_1 from '../img/cursor_1.cur';
 import cursor_2 from '../img/cursor_2.cur';
 
+const Desolve = keyframes`
+    0% { opacity: 0% }
+    100% { opacity: 100% }
+`;
+
 const SkillsWrapper = styled.div`
     display: flex;
+    animation: ${Desolve} 2s ease;
 `;
 
 const Moon = styled.div`
@@ -276,7 +288,7 @@ const FlagBar1 = styled.div`
 
 const Flag1 = styled.div`
     top: 165px;
-    left: 1165px;
+    left: 1164px;
     width: 170px;
     height: 140px;
     background-image: url(${flagFirst});
@@ -372,19 +384,19 @@ const Flag4 = styled.div`
 `;
 
 const FlagBar5 = styled.div`
-    top: 449px;
-    left: 208px;
+    top: 242px;
+    left: 264px;
     width: 200px;
-    height: 400px;
-    background-image: url(${flagShortest});
+    height: 600px;
+    background-image: url(${flagLonger});
     background-repeat: no-repeat;
     position: absolute;
     z-index: 0;
 `;
 
 const Flag5 = styled.div`
-    top: 445px;
-    left: 381px;
+    top: 230px;
+    left: 382.5px;
     width: 180px;
     height: 140px;
     background-image: url(${flagFifth});
@@ -454,14 +466,124 @@ const Shadow5 = styled.div`
 `;
 
 const Shadow6 = styled.div`
-    top: 757.5px;
-    left: 1288.5px;
+    top: 746.5px;
+    left: 1280.5px;
     width: 200px;
-    height: 91px;
+    height: 102px;
     background-image: url(${shadow2});
     background-repeat: no-repeat;
     position: absolute;
     z-index: 0;
+`;
+
+const FootMove = styled.div`
+    top: 728.5px;
+    left: 1259.5px;
+    width: 40px;
+    height: 40px;
+    background-image: url(${footMove});
+    background-repeat: no-repeat;
+    position: absolute;
+`;
+
+const Flag1Text = styled.div`
+    top: -32px;
+    left: 891px;
+    width: 400px;
+    height: 220px;
+    background-image: url(${jsBubble});
+    background-repeat: no-repeat;
+    position: absolute;
+`;
+
+const Flag1TextArea = styled.span`
+    padding-top: 84px;
+    padding-left: 15px;
+    color: #606060;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Poor Story', cursive;
+    position: absolute;
+`;
+
+const Flag2Text = styled.div`
+    top: -26px;
+    left: 783px;
+    width: 400px;
+    height: 323px;
+    background-image: url(${htmlBubble});
+    background-repeat: no-repeat;
+    position: absolute;
+`;
+
+const Flag2TextArea = styled.span`
+    padding-top: 88px;
+    padding-left: 15px;
+    color: #606060;
+    font-size: 17px;
+    font-weight: 200;
+    font-family: 'Poor Story', cursive;
+    position: absolute;
+`;
+
+const Flag3Text = styled.div`
+    top: 0px;
+    left: 470px;
+    width: 400px;
+    height: 297px;
+    background-image: url(${reactBubble});
+    background-repeat: no-repeat;
+    position: absolute;
+`;
+
+const Flag3TextArea = styled.span`
+    padding-top: 88px;
+    padding-left: 15px;
+    color: #606060;
+    font-size: 17px;
+    font-weight: 200;
+    font-family: 'Poor Story', cursive;
+    position: absolute;
+`;
+
+const Flag4Text = styled.div`
+    top: 61px;
+    left: 520px;
+    width: 400px;
+    height: 370px;
+    background-image: url(${nodeBubble});
+    background-repeat: no-repeat;
+    position: absolute;
+`;
+
+const Flag4TextArea = styled.span`
+    padding-top: 96px;
+    padding-left: 47px;
+    color: #606060;
+    font-size: 17px;
+    font-weight: 200;
+    font-family: 'Poor Story', cursive;
+    position: absolute;
+`;
+
+const Flag5Text = styled.div`
+    top: 23px;
+    left: 335px;
+    width: 400px;
+    height: 222px;
+    background-image: url(${etcBubble});
+    background-repeat: no-repeat;
+    position: absolute;
+`;
+
+const Flag5TextArea = styled.span`
+    padding-top: 96px;
+    padding-left: 15px;
+    color: #606060;
+    font-size: 17px;
+    font-weight: 200;
+    font-family: 'Poor Story', cursive;
+    position: absolute;
 `;
 
 const TextWrapper = styled.div`
@@ -471,6 +593,25 @@ const SkillsText = styled.div`
 `;
 
 export default function ContentSkills() {
+
+    const [popOverStatu, setPopOverStatu] = useState({js: false, html: false, react: false, node: false, etc: false});
+
+    const onJsHandler = () => {
+        setPopOverStatu({js: !popOverStatu.js});
+    };
+    const onHtmlHandler = () => {
+        setPopOverStatu({html: !popOverStatu.html});
+    };
+    const onReactHandler = () => {
+        setPopOverStatu({react: !popOverStatu.react});
+    };
+    const onNodeHandler = () => {
+        setPopOverStatu({node: !popOverStatu.node});
+    };
+    const onEtcHandler = () => {
+        setPopOverStatu({etc: !popOverStatu.etc});
+    };
+
     return (
         <SkillsWrapper>
             <Moon />
@@ -489,21 +630,76 @@ export default function ContentSkills() {
                     <Light />
                     <Ear />
                     <FlagBar1 />
-                    <Flag1 />
+                    <Flag1 onMouseOver={onJsHandler} onMouseOut={onJsHandler} />
+                    {popOverStatu.js && (
+                        <Flag1Text>
+                            <Flag1TextArea>
+                                웹의 구조와 작동 방식을<br/>
+                                깊이있게 이해하기 위해 꾸준히 공부하고 있으며,<br/>
+                                자바스크립트(ES6+)를 이용하여<br/>
+                                정적 화면을 동적으로 구현하는데 필요한<br/>
+                                다양한 로직을 설계할 수 있습니다.<br/>
+                                + TypeScript를 공부 중입니다.
+                            </Flag1TextArea>
+                        </Flag1Text>
+                    )}
                     <FlagBar2 />
-                    <Flag2 />
+                    <Flag2 onMouseOver={onHtmlHandler} onMouseOut={onHtmlHandler} />
+                    {popOverStatu.html && (
+                        <Flag2Text>
+                            <Flag2TextArea>
+                                HTML 문법을 잘 이해하고 있으며<br/>
+                                CSS(styled-components)를 다채롭게 또한<br/>
+                                효율적으로 활용하여,<br/>
+                                보기 좋고, 쓰기 좋은 웹 페이지를 제작하는데<br/>
+                                열정을 가지고 있습니다.
+                            </Flag2TextArea>
+                        </Flag2Text>
+                    )}
                     <FlagBar3 />
-                    <Flag3 />
+                    <Flag3 onMouseOver={onReactHandler} onMouseOut={onReactHandler} />
+                    {popOverStatu.react && (
+                        <Flag3Text>
+                            <Flag3TextArea>
+                                리액트, 리액트 훅스를 활용하여<br/>
+                                특정 기능 구현을 위해 필요한 로직을 설계하고<br/>
+                                함수들을 생성하며,<br/>
+                                이벤트 및 상태 관리를 수월하게 할 수 있습니다.<br/>
+                                + Redux 및 관련 미들웨어를 공부 중입니다.
+                            </Flag3TextArea>
+                        </Flag3Text>
+                    )}
                     <FlagBar4 />
-                    <Flag4 />
+                    <Flag4 onMouseOver={onNodeHandler} onMouseOut={onNodeHandler} />
+                    {popOverStatu.node && (
+                        <Flag4Text>
+                            <Flag4TextArea>
+                                node.js 환경의 특징을 이해하며<br/>
+                                핵심 개념들에 대해 깊이있게 공부해 왔습니다.<br/>
+                                express를 활용해 보다 쉽게 API를 작성하여<br/>
+                                클라이언트와 기본적인 소통이 가능하게 할 수 있습니다.<br/>
+                            </Flag4TextArea>
+                        </Flag4Text>
+                    )}
                     <FlagBar5 />
-                    <Flag5 />
+                    <Flag5 onMouseOver={onEtcHandler} onMouseOut={onEtcHandler} />
+                    {popOverStatu.etc && (
+                        <Flag5Text>
+                            <Flag5TextArea>
+                                SQL 쿼리문을 작성, 또한 Sequelize를 통해<br/>
+                                MySQL에 데이터를 저장, 수정 및 삭제할 수 있습니다.<br/>
+                                깃헙의 작동 원리를 이해, 유용하게 활용할 수 있으며<br/>
+                                노션, 미로 , 슬랙 등 다양한 협업 툴에도 익숙합니다.<br/>
+                            </Flag5TextArea>
+                        </Flag5Text>
+                    )}
                     <Shadow1 />
                     <Shadow2 />
                     <Shadow3 />
                     <Shadow4 />
                     <Shadow5 />
                     <Shadow6 />
+                    <FootMove />
                 </Astronaut>
             </AstronautWrapper>
             <TextWrapper>
