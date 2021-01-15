@@ -25,7 +25,7 @@ const ContentWrapper = styled.div`
     z-index: 3;
 `;
 
-export default function Content({ theme, onThemeToDarkHandler, onThemeToLightHandler }) {
+export default function Content({ theme, onThemeToDarkHandler, onThemeToLightHandler, onFoldToWorksHandler }) {
     return (
         <ContentWrapper>
             <Route 
@@ -33,11 +33,16 @@ export default function Content({ theme, onThemeToDarkHandler, onThemeToLightHan
                 exact={true} 
                 render={() => 
                     <ContentMain theme={theme} onThemeToDarkHandler={onThemeToDarkHandler} onThemeToLightHandler={onThemeToLightHandler} />
-                } 
+                }
             />
             <Route path="/about" component={ContentAbout} />
             <Route path="/skills" component={ContentSkills} />
-            <Route path="/works" component={ContentWorks} />
+            <Route 
+                path="/works"
+                render={() => 
+                    <ContentWorks onFoldToWorksHandler={onFoldToWorksHandler} />
+                }    
+            />
             <Route path="/contact" component={ContentContact} />
         </ContentWrapper>
     );
