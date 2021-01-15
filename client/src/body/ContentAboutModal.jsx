@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 import bubbleBig from '../img/bubble_big.png';
 
@@ -79,6 +79,6 @@ export default function ContentAboutModal({ isModalOpen, ModalOpenHandler }) {
     } else if (isModalOpen === false) {
         return (
             ''
-        )
+        );
     }
 }

@@ -1,0 +1,150 @@
+/* .portfolio_toggle {
+    top: 538px;
+    left: 260px;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    z-index: 30;
+} */
+
+/* .devmap_toggle {
+    top: 538px;
+    left: 337px;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    z-index: 30;
+} */
+
+/* .hobbystagram_toggle {
+    top: 538px;
+    left: 414px;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    z-index: 30;
+} */
+
+/* .others_toggle {
+    top: 538px;
+    left: 491px;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    z-index: 30;
+} */
+
+/* input 박스 */
+/* .portfolio_toggle input {
+    display: none;
+    position: absolute;
+}
+
+.portfolio_toggle label {
+    display: block;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    background-image: url('../img/button_bar.png');
+    background-repeat: no-repeat;
+} */
+
+/* 동그라미 */
+/* .portfolio_toggle label:after {
+    content:""; 
+    position: absolute;  
+    width: 70px; 
+    height: 50px; 
+}
+
+.portfolio_toggle input:checked + label { 
+    background-image: url('../img/button_bar_right.png');
+    background-repeat: no-repeat;
+    margin-left: 13px;
+    transition: all 0.1s;
+} */
+
+/* input:checked + label:after {
+    left: calc(100%);
+} */
+
+/* .devmap_toggle input {
+    display: none;
+    position: absolute;
+}
+
+.devmap_toggle label {
+    display: block;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    background-image: url('../img/button_bar.png');
+    background-repeat: no-repeat;
+}
+
+.devmap_toggle label:after {
+    content:""; 
+    position: absolute;  
+    width: 70px; 
+    height: 50px; 
+}
+
+.devmap_toggle input:checked + label { 
+    background-image: url('../img/button_bar_right.png');
+    background-repeat: no-repeat;
+    margin-left: 13px;
+}
+
+.hobbystagram_toggle input {
+    display: none;
+    position: absolute;
+}
+
+.hobbystagram_toggle label {
+    display: block;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    background-image: url('../img/button_bar.png');
+    background-repeat: no-repeat;
+}
+
+.hobbystagram_toggle label:after {
+    content:""; 
+    position: absolute;  
+    width: 70px; 
+    height: 50px; 
+}
+
+.hobbystagram_toggle input:checked + label { 
+    background-image: url('../img/button_bar_right.png');
+    background-repeat: no-repeat;
+    margin-left: 13px;
+}
+
+.others_toggle input {
+    display: none;
+    position: absolute;
+}
+
+.others_toggle label {
+    display: block;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    background-image: url('../img/button_bar.png');
+    background-repeat: no-repeat;
+}
+
+.others_toggle label:after {
+    content:""; 
+    position: absolute;  
+    width: 70px; 
+    height: 50px; 
+}
+
+.others_toggle input:checked + label { 
+    background-image: url('../img/button_bar_right.png');
+    background-repeat: no-repeat;
+    margin-left: 13px;
+} */

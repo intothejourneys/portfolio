@@ -1,0 +1,38 @@
+.others_toggle {
+    top: 538px;
+    left: 491px;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    z-index: 30;
+}
+
+.others_toggle input {
+    /* input 박스 */
+    display: none;
+    position: absolute;
+}
+
+.others_toggle label {
+    display: block;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    background-image: url('../img/button_bar.png');
+    background-repeat: no-repeat;
+}
+
+.others_toggle label:after {
+    /* 동그라미 */
+    content:""; 
+    position: absolute;  
+    width: 70px; 
+    height: 50px; 
+}
+
+.others_toggle input:checked + label { 
+    background-image: url('../img/button_bar_right.png');
+    background-repeat: no-repeat;
+    margin-left: 13px;
+    /* transition: all 0.1s; */
+}

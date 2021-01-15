@@ -1,0 +1,38 @@
+.hobbystagram_toggle {
+    top: 538px;
+    left: 414px;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    z-index: 30;
+}
+
+.hobbystagram_toggle input {
+    /* input 박스 */
+    display: none;
+    position: absolute;
+}
+
+.hobbystagram_toggle label {
+    display: block;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    background-image: url('../img/button_bar.png');
+    background-repeat: no-repeat;
+}
+
+.hobbystagram_toggle label:after {
+    /* 동그라미 */
+    content:""; 
+    position: absolute;  
+    width: 70px; 
+    height: 50px; 
+}
+
+.hobbystagram_toggle input:checked + label { 
+    background-image: url('../img/button_bar_right.png');
+    background-repeat: no-repeat;
+    margin-left: 13px;
+    /* transition: all 0.1s; */
+}

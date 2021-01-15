@@ -207,15 +207,15 @@ const AstLight = styled.div`
     animation-direction: alternate;
 `;
 
-const TextWrapper = styled.div`
-    margin-top: 120px;
-    margin-left: 100px;
-`;
+// const TextWrapper = styled.div`
+//     margin-top: 120px;
+//     margin-left: 100px;
+// `;
 
-const AboutText = styled.div`
-    font-size: 21px;
-    font-family: 'Poor Story', cursive;
-`;
+// const AboutText = styled.div`
+//     font-size: 21px;
+//     font-family: 'Poor Story', cursive;
+// `;
 
 const Button = styled.div`
     display: flex;

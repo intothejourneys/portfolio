@@ -577,7 +577,7 @@ const Flag5Text = styled.div`
 `;
 
 const Flag5TextArea = styled.span`
-    padding-top: 96px;
+    padding-top: 88px;
     padding-left: 15px;
     color: #606060;
     font-size: 17px;
@@ -688,8 +688,9 @@ export default function ContentSkills() {
                             <Flag5TextArea>
                                 SQL 쿼리문을 작성, 또한 Sequelize를 통해<br/>
                                 MySQL에 데이터를 저장, 수정 및 삭제할 수 있습니다.<br/>
-                                깃헙의 작동 원리를 이해, 유용하게 활용할 수 있으며<br/>
-                                노션, 미로 , 슬랙 등 다양한 협업 툴에도 익숙합니다.<br/>
+                                깃헙의 작동 원리를 이해하고 유용하게 활용할 수 있으며<br/>
+                                노션, 미로, 슬랙 등 다양한 협업 툴 사용에 익숙합니다.<br/>
+                                영어로 의사 소통 및 메일 작성 경험이 많습니다.
                             </Flag5TextArea>
                         </Flag5Text>
                     )}

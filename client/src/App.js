@@ -25,6 +25,10 @@ export default function App() {
     );
   }
 
+  const onFoldToWorksHandler = () => {
+    setFold(true);
+  };
+
   const original = () => { // 2초간 줄 수 있는 어떠한 트렌지션을 여기에서 구현..
     console.log('wait for original');
     // 이미 return된 값이 있는 상태에서 또 return을 줄 수는 없는걸까?
@@ -75,7 +79,7 @@ export default function App() {
             <Header />
             <div>
               <Nav />
-              <Content theme={theme} onThemeToDarkHandler={onThemeToDarkHandler} onThemeToLightHandler={onThemeToLightHandler} />
+              <Content theme={theme} onThemeToDarkHandler={onThemeToDarkHandler} onThemeToLightHandler={onThemeToLightHandler} onFoldToWorksHandler={onFoldToWorksHandler} />
             </div>
             <Footer />
           </div>
