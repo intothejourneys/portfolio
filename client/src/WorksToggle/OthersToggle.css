@@ -22,6 +22,10 @@
     background-repeat: no-repeat;
 }
 
+.others_toggle label:hover {
+    cursor: url('../img/cursor_2.cur'), auto;
+}
+
 .others_toggle label:after {
     /* 동그라미 */
     content:""; 
