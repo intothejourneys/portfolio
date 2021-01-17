@@ -21,7 +21,7 @@ import bar from '../img/spaceship_bar.png';
 import circle from '../img/spaceship_circle.png';
 import light from '../img/spaceship_light.png';
 
-// import buttonBar from '../img/button_bar.png';
+import cursor_2 from '../img/cursor_2.cur';
 
 const Desolve = keyframes`
     0% { opacity: 0% }
@@ -178,6 +178,7 @@ const OnOff = styled.button`
     z-index: 20;
 
     &:hover {
+        cursor: url(${cursor_2}), auto;
         background: ${lighten(0.01, '#F10058')};
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
     }

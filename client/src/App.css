@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Fugaz+One&family=Jua&family=Luckiest+Guy&family=Orbitron:wght@600&family=Press+Start+2P&family=Stylish&family=Poor+Story&family=Sunflower:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Fugaz+One&family=Roboto&family=Jua&family=Luckiest+Guy&family=Orbitron:wght@600&family=Press+Start+2P&family=Stylish&family=Poor+Story&family=Sunflower:wght@300&display=swap');
 
 html, body, #root { height: 100% }
 
@@ -48,6 +48,7 @@ html, body, #root { height: 100% }
     color: #FCF6F5FF;
     background-color: var(--theme-page-background);
     /* background-color: #00539CFF; */
+    font-family: "Roboto", sans-serif;
     font-family: 'Black Han Sans', sans-serif;
     font-family: 'Fugaz One', cursive;
     font-family: 'Jua', sans-serif;

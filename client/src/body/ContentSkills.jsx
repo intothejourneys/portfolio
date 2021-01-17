@@ -36,7 +36,6 @@ import reactBubble from '../img/react_bubble.png';
 import nodeBubble from '../img/node_bubble.png';
 import etcBubble from '../img/etc_bubble.png';
 
-import cursor_1 from '../img/cursor_1.cur';
 import cursor_2 from '../img/cursor_2.cur';
 
 const Desolve = keyframes`
