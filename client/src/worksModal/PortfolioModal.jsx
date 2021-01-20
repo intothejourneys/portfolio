@@ -175,8 +175,15 @@ const Span2 = styled.span`
     position: absolute;
 `;
 
+const Span3 = styled.span`
+    top: 190px;
+    left: 150px;
+    display: inline-block;
+    position: absolute;
+`;
+
 const Link = styled.a`
-    top: 205px;
+    top: 230px;
     left: 130px;
     width: 90px;
     height: 90px;
@@ -199,33 +206,33 @@ const Link = styled.a`
     }
 `;
 
-const Github = styled.a`
-    top: 205px;
-    left: 220px;
-    width: 90px;
-    height: 90px;
-    border-color: transparent;
-    background-color: transparent;
-    background-image: url(${keyboard1});
-    background-repeat: no-repeat;
-    position: absolute;
-    display: inline-block;
-    outline: 0;
+// const Github = styled.a`
+//     top: 205px;
+//     left: 220px;
+//     width: 90px;
+//     height: 90px;
+//     border-color: transparent;
+//     background-color: transparent;
+//     background-image: url(${keyboard1});
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     display: inline-block;
+//     outline: 0;
 
-    &:hover {
-        cursor: url(${cursor_2}), auto;
-        background-image: url(${keyboard1Hover});
-        background-repeat: no-repeat;
-    }
-    &:active {
-        background-image: url(${keyboard1Active});
-        background-repeat: no-repeat;
-    }
-`;
+//     &:hover {
+//         cursor: url(${cursor_2}), auto;
+//         background-image: url(${keyboard1Hover});
+//         background-repeat: no-repeat;
+//     }
+//     &:active {
+//         background-image: url(${keyboard1Active});
+//         background-repeat: no-repeat;
+//     }
+// `;
 
 const Blog = styled.a`
-    top: 205px;
-    left: 310px;
+    top: 230px;
+    left: 220px;
     width: 90px;
     height: 90px;
     border-color: transparent;
@@ -263,9 +270,10 @@ export default function PortfolioModal({ isPortfolioModalOpen }) {
                         <Stack2>React-Hooks</Stack2>
                         <Stack3>styled-components</Stack3>
                         <Span1> ◽️ 전체 페이지 설계 및 코드 작성, UI 작업 등</Span1>
-                        <Span2> ◽️ 주요 작업 내역 - 반응형 웹, 인트로 페이지 트렌지션, 다크 모드 옵션, 멀티플 토글 관리 등</Span2>
+                        <Span2> ◽️ 주요 작업 내역 - 반응형 웹, 배경 효과, 인트로 페이지 트렌지션, 다크 모드 옵션,</Span2>
+                        <Span3>멀티플 토글 관리, CSS 애니메이션 등</Span3>
                         <Link target="_blank" href=""/>
-                        <Github target="_blank" href="https://github.com/intothejourneys/portfolio"/>
+                        {/* <Github target="_blank" href="https://github.com/intothejourneys/portfolio"/> */}
                         <Blog target="_blank" href=""/>
                     </div>
                 </Contents>
