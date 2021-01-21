@@ -15,6 +15,10 @@ import emailButtonAfter from '../img/emailButtonAfter.png';
 // import clickToCopy from '../img/clickToCopy.png';
 import clickToCopy2 from '../img/clickToCopy_use.png';
 import copied from '../img/copied_use.png';
+import blog from '../img/blog.png';
+import github from '../img/github.png';
+import youtube from '../img/youtube.png';
+import insta from '../img/insta.png';
 
 import cursor_2 from '../img/cursor_2.cur';
 
@@ -38,6 +42,86 @@ const Earth = styled.div`
     background-image: url(${earth});
     background-repeat: no-repeat;
     position: absolute;
+`;
+
+const Blog = styled.a`
+    top: 230px;
+    left: 500px;
+    width: 30px;
+    height: 30px;
+    background-image: url(${blog});
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 30;
+
+    &:hover {
+        cursor: url(${cursor_2}), auto;
+        transform: scale(1.1);
+    }
+    &:active {
+        cursor: url(${cursor_2}), auto;
+        transform: scale(0.9);
+    }
+`;
+
+const Github = styled.a`
+    top: 423px;
+    left : 515px;
+    width: 30px;
+    height: 30px;
+    background-image: url(${github});
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 30;
+
+    &:hover {
+        cursor: url(${cursor_2}), auto;
+        transform: scale(1.1);
+    }
+    &:active {
+        cursor: url(${cursor_2}), auto;
+        transform: scale(0.9);
+    }
+`;
+
+const Youtube = styled.a`
+    top: 322px;
+    left: 430px;
+    width: 30px;
+    height: 30px;
+    background-image: url(${youtube});
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 30;
+
+    &:hover {
+        cursor: url(${cursor_2}), auto;
+        transform: scale(1.1);
+    }
+    &:active {
+        cursor: url(${cursor_2}), auto;
+        transform: scale(0.9);
+    }
+`;
+
+const Insta = styled.a`
+    top: 365px;
+    left: 738px;
+    width: 20px;
+    height: 30px;
+    background-image: url(${insta});
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 30;
+
+    &:hover {
+        cursor: url(${cursor_2}), auto;
+        transform: scale(1.1);
+    }
+    &:active {
+        cursor: url(${cursor_2}), auto;
+        transform: scale(0.9);
+    }
 `;
 
 const Path = styled.path`
@@ -177,7 +261,7 @@ const EMailAfter = styled.div`
 const EMailCopyBefore = styled.button`
     top: 365px;
     left: 660px;
-    width: 40px;
+    width: 35px;
     height: 40px;
     border: transparent;
     background-color: transparent;
@@ -199,7 +283,7 @@ const EMailCopyBefore = styled.button`
 const EMailCopyAfter = styled.button`
     top: 365px;
     left: 660px;
-    width: 40px;
+    width: 35px;
     height: 40px;
     border: transparent;
     background-color: transparent;
@@ -296,11 +380,11 @@ export default function ContentContact() {
     };
 
     // 카피 안내 툴팃이 보일지 안보일지
-    const [isCopyShow, setIsCopyShow] = useState(false);
+    // const [isCopyShow, setIsCopyShow] = useState(false);
 
-    const copyShowHandler = () => {
-        setIsCopyShow(!isCopyShow);
-    };
+    // const copyShowHandler = () => {
+    //     setIsCopyShow(!isCopyShow);
+    // };
 
     // 카피 안내 툴팃이 보이는 상황(마우스 오버)에서 카피(마우스 클릭)가 되었는지 안되었는지
     const [isCopyOrNot, setIsCopyOrNot] = useState({ copy: false, text: 'CLICK!' });
@@ -350,6 +434,10 @@ export default function ContentContact() {
                         </EMailCopyBefore>
                     </CopyToClipboard>
                     <Earth />
+                    <Blog target="_blank" href="https://intothejourneys.tistory.com" />
+                    <Github target="_blank" href="https://github.com/intothejourneys" />
+                    <Youtube target="_blank" href="https://www.youtube.com/intothejourneys" />
+                    <Insta target="_blank" href="https://www.instagram.com/intothejourneys" />
                     <Path />
                     <Rocket onClick={showOrHideMyInfo}/>
                 </Wrapper>
@@ -365,6 +453,10 @@ export default function ContentContact() {
                         {/* )} */}
                     </EMailCopyAfter>
                     <Earth />
+                    <Blog target="_blank" href="https://intothejourneys.tistory.com" />
+                    <Github target="_blank" href="https://github.com/intothejourneys" />
+                    <Youtube target="_blank" href="https://www.youtube.com/intothejourneys" />
+                    <Insta target="_blank" href="https://www.instagram.com/intothejourneys" />
                     <Path />
                     <Rocket onClick={showOrHideMyInfo}/>
                 </Wrapper>
