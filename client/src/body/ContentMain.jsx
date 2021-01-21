@@ -191,15 +191,26 @@ const TextWrapper = styled.div`
     z-index: 11;
 `;
 
-const MainText = styled.div`
+const MainText1 = styled.div`
     width: 600px;
     height: 100px;
-    margin-top: 320px;
+    margin-top: 310px;
     margin-left: 650px;
     color: #FCF6F5FF;
     font-size: 40px;
     font-weight: 200;
     font-family: 'Stylish', sans-serif;
+`;
+
+const MainText2 = styled.div`
+    width: 600px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 652px;
+    color: #FCF6F5FF;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Texturina', serif;
 `;
 
 // const MainTextShadow = styled.div`
@@ -282,7 +293,8 @@ export default function ContentMain({ theme, onThemeToDarkHandler, onThemeToLigh
                     </Satelite>
                 </SateliteWrapper>
                 <TextWrapper>
-                    <MainText>색다르면서도 편안한 경험을 설계하는<br/>프론트엔드 개발자 권은정 입니다</MainText>
+                    <MainText1>색다르면서도 편안한 경험을 설계하는<br/>프론트엔드 개발자 권은정 입니다</MainText1>
+                    <MainText2>I'm Eunjung Kwon, a front-end developer<br/>who designs unique and comfortable experience</MainText2>
                     {/* <MainTextShadow /> */}
                 </TextWrapper>
             </MainWrapper>
@@ -300,7 +312,8 @@ export default function ContentMain({ theme, onThemeToDarkHandler, onThemeToLigh
                     </Satelite>
                 </SateliteWrapper>
                 <TextWrapper>
-                    <MainText>색다르면서도 편안한 경험을 설계하는<br/>프론트엔드 개발자 권은정 입니다</MainText>
+                    <MainText1>색다르면서도 편안한 경험을 설계하는<br/>프론트엔드 개발자 권은정 입니다</MainText1>
+                    <MainText2>I'm Eunjung Kwon, a front-end developer<br/>who designs unique and comfortable experience</MainText2>
                     {/* <MainTextShadow /> */}
                 </TextWrapper>
             </MainWrapper>
