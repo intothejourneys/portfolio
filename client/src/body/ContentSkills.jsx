@@ -45,7 +45,7 @@ const Desolve = keyframes`
 
 const SkillsWrapper = styled.div`
     display: flex;
-    animation: ${Desolve} 2s ease;
+    animation: ${Desolve} 3s ease;
 `;
 
 const Moon = styled.div`

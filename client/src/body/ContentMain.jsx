@@ -24,7 +24,7 @@ const Desolve = keyframes`
 
 const SateliteWrapper = styled.div`
     & {
-        animation: ${Desolve} 2s ease;
+        animation: ${Desolve} 3s ease;
         animation-timing-function: ease;
         cursor: url(${cursor_1}), auto;
     }
@@ -186,7 +186,7 @@ const TextMovement = keyframes`
 `;
 
 const TextWrapper = styled.div`
-    animation: ${Desolve} 2s ease, ${TextMovement} 5s steps(13) infinite;
+    animation: ${Desolve} 3s ease, ${TextMovement} 5s steps(13) infinite;
     cursor: url(${cursor_1}), auto;
     z-index: 11;
 `;

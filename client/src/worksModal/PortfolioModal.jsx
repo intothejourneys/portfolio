@@ -2,13 +2,13 @@ import React from 'react';
 
 import styled, { keyframes } from 'styled-components';
 
-import keyboard1 from '../img/keyboard_github.png';
+// import keyboard1 from '../img/keyboard_github.png';
 import keyboard2 from '../img/keyboard_web.png';
 import keyboard3 from '../img/keyboard_blog.png';
-import keyboard1Hover from '../img/keyboard_github_hover.png';
+// import keyboard1Hover from '../img/keyboard_github_hover.png';
 import keyboard2Hover from '../img/keyboard_web_hover.png';
 import keyboard3Hover from '../img/keyboard_blog_hover.png';
-import keyboard1Active from '../img/keyboard_github_active.png';
+// import keyboard1Active from '../img/keyboard_github_active.png';
 import keyboard2Active from '../img/keyboard_web_active.png';
 import keyboard3Active from '../img/keyboard_blog_active.png';
 
@@ -32,7 +32,7 @@ const Contents = styled.div`
     font-size: 18px;
     font-weight: 200; 
     font-family: 'Poor Story', cursive;
-    animation: ${Desolve} 2s ease;
+    animation: ${Desolve} 3s ease;
     position: absolute;
     overflow: auto;
     ::-webkit-scrollbar {

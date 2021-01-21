@@ -28,7 +28,7 @@ const Desolve = keyframes`
 `;
 
 const Wrapper = styled.div`
-    animation: ${Desolve} 2s ease;
+    animation: ${Desolve} 3s ease;
     display: flex;
 `;
 
@@ -51,6 +51,7 @@ const Blog = styled.a`
     height: 30px;
     background-image: url(${blog});
     background-repeat: no-repeat;
+    animation: ${Desolve} 1s ease;
     position: absolute;
     z-index: 30;
 
@@ -71,6 +72,7 @@ const Github = styled.a`
     height: 30px;
     background-image: url(${github});
     background-repeat: no-repeat;
+    animation: ${Desolve} 1s ease;
     position: absolute;
     z-index: 30;
 
@@ -91,6 +93,7 @@ const Youtube = styled.a`
     height: 30px;
     background-image: url(${youtube});
     background-repeat: no-repeat;
+    animation: ${Desolve} 1s ease;
     position: absolute;
     z-index: 30;
 
@@ -111,6 +114,7 @@ const Insta = styled.a`
     height: 30px;
     background-image: url(${insta});
     background-repeat: no-repeat;
+    animation: ${Desolve} 1s ease;
     position: absolute;
     z-index: 30;
 
@@ -235,6 +239,7 @@ const EMailBefore = styled.div`
     // border-color: #606060;
     background-color: #FCF6F5FF;
     box-shadow: inset 0 0 5px #606060;
+    animation: ${Desolve} 1s ease;
     position: absolute;
     z-index: 20;
 `;
@@ -267,6 +272,7 @@ const EMailCopyBefore = styled.button`
     background-color: transparent;
     background-image: url(${emailButtonBefore});
     background-repeat: no-repeat;
+    animation: ${Desolve} 1s ease;
     position: absolute;
     cursor: url(${cursor_2}), auto;
     outline: 0;
@@ -321,6 +327,7 @@ const ClickToCopy = styled.span`
     background-image: url(${clickToCopy2});
     background-repeat: no-repeat;
     position: absolute;
+    animation: ${Desolve} 1s ease;
 `;
 
 const Copied = styled.span`
@@ -393,7 +400,7 @@ export default function ContentContact() {
         setIsCopyOrNot({ copy: true, text: 'COPIED!' });
     };
 
-    const [EMailCopy, setEMailCopy] = useState('intothejourneys@gmail.com');
+    const [EMailCopy] = useState('intothejourneys@gmail.com');
 
     console.log('isCopyOrNot', isCopyOrNot);
 

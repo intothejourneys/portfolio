@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Route } from 'react-router-dom';
 
 import styled from 'styled-components';
@@ -31,6 +31,12 @@ export default function Content({ theme, onThemeToDarkHandler, onThemeToLightHan
             <Route 
                 path="/" 
                 exact={true} 
+                render={() => 
+                    <ContentMain theme={theme} onThemeToDarkHandler={onThemeToDarkHandler} onThemeToLightHandler={onThemeToLightHandler} />
+                }
+            />
+            <Route 
+                path="/portfolio"
                 render={() => 
                     <ContentMain theme={theme} onThemeToDarkHandler={onThemeToDarkHandler} onThemeToLightHandler={onThemeToLightHandler} />
                 }

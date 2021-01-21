@@ -25,7 +25,7 @@ const Desolve = keyframes`
 `;
 
 const AboutWrapper = styled.div`
-    animation: ${Desolve} 2s ease;
+    animation: ${Desolve} 3s ease;
 `;
 
 const AstronautWrapper = styled.div`

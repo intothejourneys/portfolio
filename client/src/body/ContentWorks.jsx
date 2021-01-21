@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer } from 'react';
+import React, { useState } from 'react';
 
 import styled, { keyframes } from 'styled-components';
 import { darken, lighten } from 'polished';
@@ -30,7 +30,7 @@ const Desolve = keyframes`
 
 const WorksWrapper = styled.div`
     display: flex;
-    animation: ${Desolve} 2s ease;
+    animation: ${Desolve} 3s ease;
 `;
 
 const Background = styled.div`

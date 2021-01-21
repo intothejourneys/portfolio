@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import styled, { keyframes } from 'styled-components';
 
-import Works from '../worksModal/Works';
+// import Works from '../worksModal/Works';
 import WorksTextTexture from '../img/works_text_texture.png';
 
 const ModalWrapper = styled.div`
@@ -30,7 +30,7 @@ const Texture = styled.div`
     width: 800px;
     height: 410px;
     background-image: url(${WorksTextTexture});
-    animation: ${Desolve} 2s ease, ${TextureBlink} 1s ease;
+    animation: ${Desolve} 3s ease, ${TextureBlink} 1s ease;
     opacity: 0.8;
     position: absolute;
     transform: scale(1.04, 1.4);
@@ -46,7 +46,7 @@ const ModalFrame = styled.div`
     border-radius: 10px;
     border-color: #FCF6F5FF;
     background-color: #FCF6F5FF;;
-    animation: ${Desolve} 2s ease;
+    animation: ${Desolve} 3s ease;
     opacity: 0.7;
     position: absolute;
     z-index: 20;

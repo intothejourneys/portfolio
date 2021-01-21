@@ -35,7 +35,7 @@ const Contents = styled.div`
     font-size: 18px;
     font-weight: 200; 
     font-family: 'Poor Story', cursive;
-    animation: ${Desolve} 2s ease;
+    animation: ${Desolve} 3s ease;
     position: absolute;
     overflow: auto;
     ::-webkit-scrollbar {
