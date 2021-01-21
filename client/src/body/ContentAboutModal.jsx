@@ -40,9 +40,9 @@ const ModalClose = styled.button`
 `;
 
 const ModalText1 = styled.div`
-    margin-top: 225px;
+    margin-top: 230px;
     margin-left: 98px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 200;
     font-family: 'Poor Story', cursive;
     position: absolute;
@@ -51,9 +51,9 @@ const ModalText1 = styled.div`
 `;
 
 const ModalText2 = styled.div`
-    margin-top: 255px;
+    margin-top: 245px;
     margin-left: 98px;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 200;
     font-family: 'Poor Story', cursive;
     position: absolute;
