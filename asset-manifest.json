@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.94d728ff.chunk.css",
-    "main.js": "/portfolio/static/js/main.6c677abd.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.6c677abd.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.9a6625c9.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.9a6625c9.js.map",
-    "static/js/2.5c081ab2.chunk.js": "/portfolio/static/js/2.5c081ab2.chunk.js",
-    "static/js/2.5c081ab2.chunk.js.map": "/portfolio/static/js/2.5c081ab2.chunk.js.map",
-    "static/js/3.e75a6981.chunk.js": "/portfolio/static/js/3.e75a6981.chunk.js",
-    "static/js/3.e75a6981.chunk.js.map": "/portfolio/static/js/3.e75a6981.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.057baade.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.057baade.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.2a157abb.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.2a157abb.js.map",
+    "static/js/2.c8ffbb69.chunk.js": "/portfolio/static/js/2.c8ffbb69.chunk.js",
+    "static/js/2.c8ffbb69.chunk.js.map": "/portfolio/static/js/2.c8ffbb69.chunk.js.map",
+    "static/js/3.57a8f4ff.chunk.js": "/portfolio/static/js/3.57a8f4ff.chunk.js",
+    "static/js/3.57a8f4ff.chunk.js.map": "/portfolio/static/js/3.57a8f4ff.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.94d728ff.chunk.css.map": "/portfolio/static/css/main.94d728ff.chunk.css.map",
-    "static/js/2.5c081ab2.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5c081ab2.chunk.js.LICENSE.txt",
+    "static/js/2.c8ffbb69.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c8ffbb69.chunk.js.LICENSE.txt",
     "static/media/ast_body.777fc63d.png": "/portfolio/static/media/ast_body.777fc63d.png",
     "static/media/ast_body_big.0e19740d.png": "/portfolio/static/media/ast_body_big.0e19740d.png",
     "static/media/ast_head.b254f3c2.png": "/portfolio/static/media/ast_head.b254f3c2.png",
@@ -56,9 +56,9 @@
     "static/media/권은정_프론트엔드_최신.14e08949.pdf": "/portfolio/static/media/권은정_프론트엔드_최신.14e08949.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.9a6625c9.js",
-    "static/js/2.5c081ab2.chunk.js",
+    "static/js/runtime-main.2a157abb.js",
+    "static/js/2.c8ffbb69.chunk.js",
     "static/css/main.94d728ff.chunk.css",
-    "static/js/main.6c677abd.chunk.js"
+    "static/js/main.057baade.chunk.js"
   ]
 }
