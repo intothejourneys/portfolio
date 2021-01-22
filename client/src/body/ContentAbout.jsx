@@ -4,18 +4,21 @@ import styled, { keyframes } from 'styled-components';
 
 import ContentAboutModal from './ContentAboutModal';
 
-import astHeadBig from '../img/ast_head_big.png';
-import astBodyBig from '../img/ast_body_big.png';
+// import astHeadBig from '../img/ast_head_big.png';
+// import astBodyBig from '../img/ast_body_big.png';
 import astLeftArmFrontBig from '../img/ast_left_arm_1_big.png';
-import astLeftArmBig from '../img/ast_left_arm_2_big.png';
-import astRightArmBig from '../img/ast_right_arm_big.png';
+// import astLeftArmBig from '../img/ast_left_arm_2_big.png';
+// import astRightArmBig from '../img/ast_right_arm_big.png';
 import antenaUnderBig from '../img/ast_antena_under_big.png';
 import antenaBig from '../img/ast_antena_big.png';
 import antenaLight from '../img/ast_antena_light.png';
 import myResume from '../resume/권은정_프론트엔드_최신.pdf';
 import bubble from '../img/bubble.png';
-import mouse from '../img/mouse.png';
+import mouse from '../img/mouse.svg';
 import mouseBig from '../img/mouse_big.png';
+import buttonText from '../img/introduce.svg';
+
+import astFixedParts from '../img/astronaut_body_together.png';
 
 import cursor_2 from '../img/cursor_2.cur';
 
@@ -25,6 +28,7 @@ const Desolve = keyframes`
 `;
 
 const AboutWrapper = styled.div`
+    display: flex;
     animation: ${Desolve} 3s ease;
 `;
 
@@ -32,70 +36,125 @@ const AstronautWrapper = styled.div`
 `;
 
 const Astronaut = styled.div`
-    display: flex;
-    position: relative;
 `;
 
-const AstHead = styled.div`
-    width: 470px;
-    height: 340px;
-    top: 216px;
-    left: 818px;
-    background-image: url(${astHeadBig});
+const AstAll = styled.div`
+    width: 35%;
+    height: 84.5%;
+    // top: 183px;
+    // left: 792px;
+    bottom: -9%;
+    right: 10%;
+    background-image: url(${astFixedParts});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
+    // object-fit: contain;
+    // object-position: center center;
+    z-index: 26;
 `;
 
-const AstBody = styled.div`
-    width: 340px;
-    height: 420px;
-    top: 424px;
-    left: 900px;
-    background-image: url(${astBodyBig});
-    background-repeat: no-repeat;
-    position: absolute;
-`;
+// const AstHead = styled.div`
+//     width: 470px;
+//     height: 340px;
+//     // top: 216px;
+//     // left: 818px;
+//     top: 27.135%;
+//     left: 53.464%;
+//     background-image: url(${astHeadBig});
+//     background-repeat: no-repeat;
+//     position: absolute;
+// `;
+
+// const AstBody = styled.div`
+//     width: 340px;
+//     height: 420px;
+//     // top: 424px;
+//     // left: 900px;
+//     top: 53.266%;
+//     left: 58.823%;
+//     background-image: url(${astBodyBig});
+//     background-repeat: no-repeat;
+//     position: absolute;
+// `;
+
+// const MoveArm = keyframes`
+//     0% { transform: rotate(0deg) };
+//     8% { transform: rotate(3deg) translate(3px, 3px) };
+//     16% { transform: rotate(6deg) translate(6px, 6px) };
+//     24% { transform: rotate(9deg) translate(9px, 9px) };
+//     32% { transform: rotate(12deg) translate(12px, 12px) };
+//     40% { transform: rotate(15deg) translate(15px, 15px) };
+//     50% { transform: rotate(18deg) translate(18px, 18px) };
+//     58% { transform: rotate(15deg) translate(15px, 15px) };
+//     66% { transform: rotate(12deg) translate(12px, 12px) };
+//     74% { transform: rotate(9deg) translate(9px, 9px) };
+//     82% { transform: rotate(6deg) translate(6px, 6px) };
+//     90% { transform: rotate(3deg) translate(3px, 3px) };
+//     100% { transform: rotate(0deg) };
+// `;
 
 const MoveArm = keyframes`
     0% { transform: rotate(0deg) };
-    8% { transform: rotate(3deg) translate(3px, 3px) };
-    16% { transform: rotate(6deg) translate(6px, 6px) };
-    24% { transform: rotate(9deg) translate(9px, 9px) };
-    32% { transform: rotate(12deg) translate(12px, 12px) };
-    40% { transform: rotate(15deg) translate(15px, 15px) };
-    50% { transform: rotate(18deg) translate(18px, 18px) };
-    58% { transform: rotate(15deg) translate(15px, 15px) };
-    66% { transform: rotate(12deg) translate(12px, 12px) };
-    74% { transform: rotate(9deg) translate(9px, 9px) };
-    82% { transform: rotate(6deg) translate(6px, 6px) };
-    90% { transform: rotate(3deg) translate(3px, 3px) };
+    8% { transform: rotate(3deg) translate(0.2%, 0.3%) };
+    16% { transform: rotate(6deg) translate(0.4%, 0.6%) };
+    24% { transform: rotate(9deg) translate(0.6%, 0.9%) };
+    32% { transform: rotate(12deg) translate(0.8%, 1.2%) };
+    40% { transform: rotate(15deg) translate(1%, 1.5%) };
+    50% { transform: rotate(18deg) translate(1.2%, 1.8%) };
+    58% { transform: rotate(15deg) translate(1%, 1.5%) };
+    66% { transform: rotate(12deg) translate(0.8%, 1.2%) };
+    74% { transform: rotate(9deg) translate(0.6%, 0.9%) };
+    82% { transform: rotate(6deg) translate(0.4%, 0.6%) };
+    90% { transform: rotate(3deg) translate(0.2%, 0.3%) };
     100% { transform: rotate(0deg) };
 `;
 
+// const MoveArm = keyframes`
+//     0% { transform: rotate(0deg) };
+//     8% { transform: rotate(3deg) };
+//     16% { transform: rotate(6deg) };
+//     24% { transform: rotate(9deg) };
+//     32% { transform: rotate(12deg) };
+//     40% { transform: rotate(15deg) };
+//     50% { transform: rotate(18deg) };
+//     58% { transform: rotate(15deg) };
+//     66% { transform: rotate(12deg) };
+//     74% { transform: rotate(9deg) };
+//     82% { transform: rotate(6deg) };
+//     90% { transform: rotate(3deg) };
+//     100% { transform: rotate(0deg) };
+// `;
+
 const AstLeftArmFront = styled.div`
-    width: 500px;
-    height: 220px;
-    top: 582px;
-    left: 420px;
+    width: 27%;
+    height: 27%;
+    // top: 586px;
+    // left: 417px;
+    bottom: -1.6%;
+    right: 41.8%;
     background-image: url(${astLeftArmFrontBig});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     animation: ${MoveArm} 5s steps(13) infinite;
     transform-origin: 90% 50%;
     cursor: url(${cursor_2}), auto;
-    z-index: 5;
+    z-index: 25;
 `;
 
-const AstLeftArm = styled.div`
-    width: 150px;
-    height: 200px;
-    top: 604px;
-    left: 770px;
-    background-image: url(${astLeftArmBig});
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: 10;
-`;
+// const AstLeftArm = styled.div`
+//     width: 150px;
+//     height: 200px;
+//     top: 604px;
+//     left: 770px;
+//     background-image: url(${astLeftArmBig});
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     z-index: 10;
+// `;
 
 // const AstResume = styled.div`
 //     width: 230px;
@@ -110,15 +169,15 @@ const AstLeftArm = styled.div`
 //     z-index: 3;
 // `;
 
-const AstRightArm = styled.div`
-    width: 190px;
-    height: 255px;
-    top: 589px;
-    left: 1144px;
-    background-image: url(${astRightArmBig});
-    background-repeat: no-repeat;
-    position: absolute;
-`;
+// const AstRightArm = styled.div`
+//     width: 190px;
+//     height: 255px;
+//     top: 589px;
+//     left: 1144px;
+//     background-image: url(${astRightArmBig});
+//     background-repeat: no-repeat;
+//     position: absolute;
+// `;
 
 const MoveAntena = keyframes`
     0% { transform: translate(0, 0px) };
@@ -172,23 +231,31 @@ const LightBlink = keyframes`
 `;
 
 const AstAntenaUnder = styled.div`
-    width: 80px;
-    height: 100px;
-    top: 385px;
-    left: 1255px;
+    width: 5%;
+    height: 8.5%;
+    // top: 385px;
+    // left: 1255px;
+    bottom: 42%;
+    right: 10.3%;
     background-image: url(${antenaUnderBig});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     z-index: 11;
 `;
 
 const AstAntena = styled.div`
-    width: 190px;
-    height: 200px;
-    top: 213px;
-    left: 1250px;
+    width: 5%;
+    height: 25%;
+    // top: 213px;
+    // left: 1250px;
+    bottom: 49%;
+    right: 10%;
     background-image: url(${antenaBig});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     animation: ${MoveAntena} 4s steps(14) infinite;
     animation-direction: alternate;
@@ -196,12 +263,16 @@ const AstAntena = styled.div`
 `;
 
 const AstLight = styled.div`
-    width: 100px;
-    height: 100px;
-    top: 194px;
-    left: 1280px;
+    width: 5%;
+    height: 8%;
+    // top: 194px;
+    // left: 1280px;
+    bottom: 65%;
+    right: 9%;
     background-image: url(${antenaLight});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     animation: ${LightMove} 4s steps(14) infinite, ${LightBlink} 4s steps(14) infinite;
     animation-direction: alternate;
@@ -221,45 +292,64 @@ const Button = styled.div`
     display: flex;
 `;
 
-const ButtonText = styled.p`
-    margin-top: 308px;
-    margin-left: 620px;
-    color: #606060;
-    font-size: 20px;
-    font-weight: 100;
-    font-family: 'Jua', sans-serif;
+// const ButtonText = styled.p`
+//     bottom: 47.8%;
+//     right: 49.5%;
+//     color: #606060;
+//     font-size: 2.2vh;
+//     font-family: 'Jua', sans-serif;
+//     background-size: contain;
+//     background-position: bottom;
+//     position: absolute;
+//     opacity: 0.7;
+//     z-index: 15;
+// `;
+
+const ButtonText = styled.div`
+    width: 11%;
+    height: 11%;
+    bottom: 51%;
+    right: 49.5%;
+    background-image: url(${buttonText});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     opacity: 0.7;
     z-index: 15;
 `;
 
 const ButtonImg = styled.div`
-    top: 120px;
-    left: 570px;
-    width: 300px;
-    height: 360px;
+    width: 90%;
+    height: 90%;
+    bottom: -5%;
+    right: 9.7%;
     background-image: url(${bubble});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     z-index: 14;
 `;
 
 const ButtonMouse = styled.button`
-    margin-top: 350px;
-    margin-left: 680px;
-    width: 110px;
-    height: 80px;
+    width: 12%;
+    height: 12%;
+    bottom: 44.2%;
+    right: 45.4%;
     border: transparent;
     background-color: transparent;
     background-image: url(${mouse});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: absolute;
     cursor: url(${cursor_2}), auto;
     outline: 0;
     z-index: 16;
 
     &:hover {
         background-image: url(${mouseBig});
-        background-repeat: no-repeat;
     }
 `;
 
@@ -275,14 +365,15 @@ export default function ContentAbout() {
         <AboutWrapper>
             <AstronautWrapper>
                 <Astronaut>
-                    <AstHead />
-                    <AstBody />
-                    <AstLeftArm />
+                    <AstAll />
+                    {/* <AstHead />
+                    <AstBody /> */}
+                    {/* <AstLeftArm /> */}
                     <a href={myResume} download="권은정_이력서">
                     {/* 임시, 나중에 배포할 때 변경하기 */}
                         <AstLeftArmFront />
                     </a>
-                    <AstRightArm />
+                    {/* <AstRightArm /> */}
                     <AstAntenaUnder />
                     <AstAntena />
                     <AstLight />
@@ -308,7 +399,8 @@ export default function ContentAbout() {
                 </AboutText>
             </TextWrapper> */}
             <Button>
-                <ButtonText>Hello!<br/>Let me introduce<br/>Myself ➜</ButtonText>
+                {/* <ButtonText>Hello!<br/>Let me introduce<br/>Myself ➜</ButtonText> */}
+                <ButtonText />
                 <ButtonMouse onClick={ModalOpenHandler} />
                 <ContentAboutModal isModalOpen={isModalOpen} ModalOpenHandler={ModalOpenHandler} />
                 <ButtonImg />

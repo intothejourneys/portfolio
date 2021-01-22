@@ -3,6 +3,11 @@ import React, {useState } from 'react';
 import styled from 'styled-components';
 
 import bubbleBig from '../img/bubble_big.png';
+import x from '../img/aboutModalX.svg';
+import eng from '../img/ENG.svg';
+import kor from '../img/KOR.svg';
+import koreanText from '../img/koreanText.svg';
+import englishText from '../img/EnglishText.svg';
 
 import cursor2 from '../img/cursor_2.cur';
 
@@ -11,88 +16,120 @@ const ModalWrapper = styled.div`
 `;
 
 const ModalFrame = styled.div`
-    top: -89px;
-    left: 37px;
-    width: 800px;
-    height: 540px;
+    width: 100%;
+    height: 100%;
+    bottom: 7.4%;
+    right: 19.14%;
     color: #606060;
     background-image: url(${bubbleBig});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     z-index: 20;
 `;
 
 const ModalClose = styled.button`
-    margin-top: 205px;
-    margin-left: 745px;
-    width: 30px;
-    height: 30px;
-    color: #c0dee5;
-    font-size: 18px;
-    font-family: 'Poor Story', cursive; 
+    width: 2%;
+    height: 3%;
+    bottom: 72.5%;
+    right: 27.8%;
+    // color: #c0dee5;
+    // font-size: 18px;
+    // font-family: 'Poor Story', cursive; 
     border: 3px solid;
     border-radius: 10px;
-    border-color: #c0dee5;
-    background-color: none;
+    border-color: transparent;
+    background-image: url(${x});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-color: transparent;
     position: absolute;
     outline: 0;
+    opacity: 0.7;
     cursor: url(${cursor2}), auto;
+    z-index: 22;
 `;
 
 const ModalText1 = styled.div`
-    margin-top: 230px;
-    margin-left: 98px;
-    font-size: 16px;
-    font-weight: 200;
-    font-family: 'Poor Story', cursive;
+    width: 38%;
+    height: 32%;
+    bottom: 41%;
+    right: 32%;
+    // font-size: 16px;
+    // font-weight: 200;
+    // font-family: 'Poor Story', cursive;
+    background-image: url(${koreanText});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     opacity: 0.7;
     z-index: 21;
 `;
 
 const ModalText2 = styled.div`
-    margin-top: 245px;
-    margin-left: 98px;
-    font-size: 18px;
-    font-weight: 200;
-    font-family: 'Poor Story', cursive;
+    width: 40%;
+    height: 35%;
+    bottom: 43.5%;
+    right: 30%;
+    // font-size: 16px;
+    // font-weight: 200;
+    // font-family: 'Poor Story', cursive;
+    background-image: url(${englishText});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     opacity: 0.7;
     z-index: 21;
 `;
 
 const KorToEng = styled.button`
-    margin-top: 205px;
-    margin-left: 685px;
-    width: 50px;
-    height: 30px;
-    color: #ffffff;
-    font-size: 18px;
-    font-family: 'Poor Story', cursive; 
+    width: 7%;;
+    height: 4%;
+    bottom: 72%;
+    right: 28.2%;
+    // color: #ffffff;
+    // font-size: 18px;
+    // font-family: 'Poor Story', cursive; 
     border: 3px solid;
     border-radius: 10px;
-    border-color: #c0dee5;
-    background-color: #c0dee5;
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(${eng});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     outline: 0;
+    opacity: 0.7;
     cursor: url(${cursor2}), auto;
+    z-index: 22;
 `;
 
 const EngToKor = styled.button`
-    margin-top: 205px;
-    margin-left: 685px;
-    width: 50px;
-    height: 30px;
-    color: #ffffff;
-    font-size: 18px;
-    font-family: 'Poor Story', cursive; 
+    width: 7%;;
+    height: 4%;
+    bottom: 72%;
+    right: 28.2%;
+    // color: #ffffff;
+    // font-size: 18px;
+    // font-family: 'Poor Story', cursive; 
     border: 3px solid;
     border-radius: 10px;
-    border-color: #c0dee5;
-    background-color: #c0dee5;
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(${kor});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     outline: 0;
+    opacity: 0.7;
     cursor: url(${cursor2}), auto;
+    z-index: 22;
 `;
 
 export default function ContentAboutModal({ isModalOpen, ModalOpenHandler }) {
@@ -111,10 +148,10 @@ export default function ContentAboutModal({ isModalOpen, ModalOpenHandler }) {
             return (
                 <ModalWrapper>
                     <ModalFrame>
-                        <KorToEng onClick={KorToEngHandler}>ENG</KorToEng>
-                        <ModalClose onClick={ModalOpenHandler}>x</ModalClose>
+                        <KorToEng onClick={KorToEngHandler}></KorToEng>
+                        <ModalClose onClick={ModalOpenHandler}></ModalClose>
                         <ModalText1>
-                            프리랜서 영상 제작자로 아프리카, 유럽 등 80여개 국에서 홀로, 또 같이 오랫동안 일해왔습니다.<br/>
+                            {/* 프리랜서 영상 제작자로 아프리카, 유럽 등 80여개 국에서 홀로, 또 같이 오랫동안 일해왔습니다.<br/>
                             노트북 앞에서 홀로 밤 낮없이 집중하는 것에 익숙하고,<br/>
                             힘을 합쳐 같이 하나의 결과물을 완성해내는 희열도 잘 압니다.<br/>
                             <br/>
@@ -125,8 +162,8 @@ export default function ContentAboutModal({ isModalOpen, ModalOpenHandler }) {
                             상상하던 이미지에 움직임을 더해 현실화하는 작업.<br/>
                             화면 속 주인공은 아니지만, 뒤에서 그 전부를 직접 만들어내는 사람.<br/>
                             <br/>
-                            UI/UX를 민감하게 파악하여 가볍고 섬세하게 구현해내는 프론트엔드 개발자가 되기 위해,<br/>
-                            또한 존중과 배려를 바탕으로 날마나 더 좋은 소통을 하는 사람이 되기 위해 항상 노력하고 있습니다.<br/>
+                            민감하게 파악하고, 가볍고 섬세하게 구현해내는 프론트엔드 개발자가 되기 위해,<br/>
+                            또한 존중과 배려를 바탕으로 날마나 더 좋은 소통을 하는 사람이 되기 위해 항상 노력하고 있습니다.<br/> */}
                         </ModalText1>
                     </ModalFrame>
                 </ModalWrapper>
@@ -135,10 +172,10 @@ export default function ContentAboutModal({ isModalOpen, ModalOpenHandler }) {
             return (
                 <ModalWrapper>
                     <ModalFrame>
-                        <EngToKor onClick={EngToKorHandler}>KOR</EngToKor>
-                        <ModalClose onClick={ModalOpenHandler}>x</ModalClose>
+                        <EngToKor onClick={EngToKorHandler}></EngToKor>
+                        <ModalClose onClick={ModalOpenHandler}></ModalClose>
                         <ModalText2>
-                            I have worked as a freelance video producer for more than 7 years in more than 80 countries.<br/>
+                            {/* I have worked as a freelance video producer for more than 7 years in more than 80 countries.<br/>
                             I have proven experience in producing quality outputs in a mobile enviroment,<br/>
                             working alone and as a team.<br/>
                             <br/>
@@ -147,7 +184,7 @@ export default function ContentAboutModal({ isModalOpen, ModalOpenHandler }) {
                             I take immense pride in directing what is seen on the screen.<br/>
                             <br/>
                             I strive to be a professional front-end developer that implements the detailed, delicate needs,<br/>
-                            supporting better communication in our daily lives. <br/>
+                            supporting better communication in our daily lives. <br/> */}
                         </ModalText2>
                     </ModalFrame>
                 </ModalWrapper>

@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Fugaz+One&family=Roboto&family=Jua&family=Texturina:wght@400&family=Luckiest+Guy&family=Orbitron:wght@600&family=Press+Start+2P&family=Stylish&family=Poor+Story&family=Sunflower:wght@300&display=swap');
 
-html, body, #root { height: 100% }
+html, body, #root { 
+    width: 100vw; 
+    height: 49.74vw; /* height:width ratio = 955/1920  */
+    max-width: 201vh; /* 1920/955 */
+    max-height: 100vh;
+    margin: auto;
+    position: absolute;
+    top:0; bottom:0; /* vertical center */
+    left:0; right:0; /* horizontal center */
+}
 
 /* .Transition_inner:after {
     content: "";
