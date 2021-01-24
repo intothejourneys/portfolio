@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Fugaz+One&family=Roboto&family=Jua&family=Texturina:wght@400&family=Luckiest+Guy&family=Orbitron:wght@600&family=Press+Start+2P&family=Stylish&family=Poor+Story&family=Sunflower:wght@300&display=swap');
 
 html, body, #root { 
-    width: 100vw; 
-    height: 49.74vw; /* height:width ratio = 955/1920  */
+    width: 100%;
+    height: 49.74vw; /* height:width ratio = 955/1920 브라우저별로 좀 남을 수 있다 */
     max-width: 201vh; /* 1920/955 */
-    max-height: 100vh;
+    max-height: 100%;
     margin: auto;
     position: absolute;
-    top:0; bottom:0; /* vertical center */
-    left:0; right:0; /* horizontal center */
+    top: 0; bottom: 0; /* vertical center */
+    left: 0; right: 0; /* horizontal center */
 }
 
 /* .Transition_inner:after {

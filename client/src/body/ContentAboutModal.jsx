@@ -18,7 +18,7 @@ const ModalWrapper = styled.div`
 const ModalFrame = styled.div`
     width: 100%;
     height: 100%;
-    bottom: 7.4%;
+    bottom: 8.4%;
     right: 19.14%;
     color: #606060;
     background-image: url(${bubbleBig});

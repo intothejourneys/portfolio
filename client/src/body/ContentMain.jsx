@@ -9,17 +9,25 @@ import sateliteWing2 from '../img/satelite_wing_2.png';
 import sateliteWing2Shadow from '../img/satelite_wing_2_shadowCut.png';
 // import textShadow from '../img/maintext_shadow.png';
 import sunlight from '../img/sunlight.png';
+import mainText from '../img/mainText.svg';
+import fake from '../img/fake.png';
+import darkMode from '../img/darkMode.svg';
+import lightMode from '../img/lightMode.svg';
+import darkModeHover from '../img/darkMode_hover.svg';
+import lightModeHover from '../img/lightMode_hover.svg';
 
 import cursor_1 from '../img/cursor_1.cur';
 import cursor_2 from '../img/cursor_2.cur';
 
-const MainWrapper = styled.div`
-    cursor: url(${cursor_1}), auto; // 여기가 아니라 Content에 넣어주어야 적용됨
-`;
-
 const Desolve = keyframes`
     0% { opacity: 0% }
     100% { opacity: 100% }
+`;
+
+const MainWrapper = styled.div`
+    width: 99%;
+    height: 100%; 
+    cursor: url(${cursor_1}), auto; // 여기가 아니라 Content에 넣어주어야 적용됨
 `;
 
 const SateliteWrapper = styled.div`
@@ -31,13 +39,15 @@ const SateliteWrapper = styled.div`
 
     &:before {
         content: "";
-        width: 1360px;
-        height: 950px;
-        top: -100px;
-        left: 0px;
-        position: absolute;
+        width: 100%;
+        height: 119.5%;
+        top: -12%;
+        left: 0%;
         background-image: url(${sunlight});
         background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        position: absolute;
     }
 `;
 
@@ -55,46 +65,64 @@ const SateliteMovement = keyframes`
     100% { transform: translate(0, 0) }
 `;
 
-const Satelite = styled.div`
-    display: flex;
-    position: relative;
+const Satelite = styled.div`                                                                                        
     animation: ${SateliteMovement} 5s steps(11) infinite;
 `;
 
-const SateliteBody = styled.div`
-    width: 200px;
-    height: 200px;
-    margin-top: 300px;
-    margin-left: 300px;
+const SateliteBody = styled.img`
+    width: 12%;
+    min-height: 15%;
+    margin-top: 20%;
+    left: 16%;
     background-image: url(${sateliteBody});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     z-index: 10;
 `;
 
 const HeadMove = keyframes`
     0% { transform: rotate(0deg) };
-    8% { transform: rotate(-5deg) translate(1.5px) };
-    16% { transform: rotate(-10deg) translate(2.5px) };
-    24% { transform: rotate(-15deg) translate(3.5px) };
-    32% { transform: rotate(-10deg) translate(2.5px) };
-    40% { transform: rotate(-5deg) translate(1.5px) };
+    8% { transform: rotate(-3deg) translate(0.15%) };
+    16% { transform: rotate(-6deg) translate(0.25%) };
+    24% { transform: rotate(-9deg) translate(0.35%) };
+    32% { transform: rotate(-6deg) translate(0.25%) };
+    40% { transform: rotate(-3deg) translate(0.15%) };
     50% { transform: rotate(0deg) };
-    58% { transform: rotate(5deg) translate(-2.5px) };
-    66% { transform: rotate(10deg) translate(-3.5px) };
-    74% { transform: rotate(15deg) translate(-4.5px) };
-    82% { transform: rotate(10deg) translate(-3.5px) };
-    90% { transform: rotate(5deg) translate(-2.5px) };
+    58% { transform: rotate(3deg) translate(-0.15%) };
+    66% { transform: rotate(6deg) translate(-0.25%) };
+    74% { transform: rotate(9deg) translate(-0.35%) };
+    82% { transform: rotate(6deg) translate(-0.25%) };
+    90% { transform: rotate(3deg) translate(-0.15%) };
     100% { transform: rotate(0deg) };
 `;
 
-const SateliteHead = styled.div`
-    width: 150px;
-    height: 150px;
-    top: 207px;
-    left: 395px;
+// const HeadMove = keyframes`
+//     0% { transform: rotate(0deg) };
+//     8% { transform: rotate(-2deg) };
+//     16% { transform: rotate(-4deg) };
+//     24% { transform: rotate(-6deg) };
+//     32% { transform: rotate(-4deg) };
+//     40% { transform: rotate(-2deg) };
+//     50% { transform: rotate(0deg) };
+//     58% { transform: rotate(2deg) };
+//     66% { transform: rotate(4deg) };
+//     74% { transform: rotate(6deg) };
+//     82% { transform: rotate(4deg) };
+//     90% { transform: rotate(2deg) };
+//     100% { transform: rotate(0deg) };
+// `;
+
+const SateliteHead = styled.img`
+    width: 16%;
+    min-height: 15%;
+    margin-top: 14.8%;
+    left: 22.6%;
     background-image: url(${sateliteHead});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     animation: ${HeadMove} 5s steps(13) infinite;
     transform-origin: center;
@@ -137,37 +165,46 @@ const SateliteHead = styled.div`
 //     }
 // `;
 
-const SateliteWing1 = styled.div`
-    width: 200px;
-    height: 210px;
-    top: 207px;
-    left: 190px;
+const SateliteWing1 = styled.img`
+    width: 12%;
+    min-height: 17%;
+    margin-top: 26.5%;
+    left: 22.9%;
     background-image: url(${sateliteWing1});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     z-index: 11;
 
     &:hover {
-        top: 190px;
-        left: 160px;
-        background-image: url(${sateliteWing2Shadow});
+        width: 15%;
+        min-height: 20%;
+        margin-top: 26.4%;
+        left: 19.7%;
+        background-image: url(${sateliteWing2});
+        transform: scale(0.9);
     }
 `;
 
-const SateliteWing2 = styled.div`
-    width: 200px;
-    height: 215px;
-    top: 395px;
-    left: 407px;
+const SateliteWing2 = styled.img`
+    width: 12%;
+    min-height: 17%;
+    margin-top: 14.7%;
+    left: 9.2%;
     background-image: url(${sateliteWing1});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     z-index: 11;
 
     &:hover {
-        top: 390px;
-        left: 355px;
-        background-image: url(${sateliteWing2});
+        width: 13.5%;
+        min-height: 18%;
+        margin-top: 14.2%;
+        left: 8.4%;
+        background-image: url(${sateliteWing2Shadow});
     }
 `;
 
@@ -191,27 +228,28 @@ const TextWrapper = styled.div`
     z-index: 11;
 `;
 
-const MainText1 = styled.div`
-    width: 600px;
-    height: 100px;
-    margin-top: 310px;
-    margin-left: 650px;
-    color: #FCF6F5FF;
-    font-size: 40px;
-    font-weight: 200;
-    font-family: 'Stylish', sans-serif;
+const MainText1 = styled.img`
+    width: 35%;
+    min-height: 35%;
+    margin-top: -3%;
+    left: 40%;
+    background-image: url(${mainText});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: absolute;
 `;
 
-const MainText2 = styled.div`
-    width: 600px;
-    height: 100px;
-    margin-top: 10px;
-    margin-left: 652px;
-    color: #FCF6F5FF;
-    font-size: 20px;
-    font-weight: 200;
-    font-family: 'Texturina', serif;
-`;
+// const MainText2 = styled.div`
+//     width: 600px;
+//     height: 100px;
+//     margin-top: 10px;
+//     margin-left: 652px;
+//     color: #FCF6F5FF;
+//     font-size: 20px;
+//     font-weight: 200;
+//     font-family: 'Texturina', serif;
+// `;
 
 // const MainTextShadow = styled.div`
 //     width: 600px;
@@ -234,48 +272,52 @@ const MainText2 = styled.div`
 // `;
 
 const ThemeToDarkButton = styled.button`
-    top: 750px;
-    left: 1300px;
-    width: 120px;
-    height: 33px;
-    font-size: 18px;
-    font-family: 'Poor Story', cursive;
-    color: #FCF6F5FF;
-    border: 3px solid;
-    border-radius: 10px;
-    border-color: rgb(14, 69, 114);
-    background-color: rgb(14, 69, 114);
+    width: 8%;
+    min-height: 6%;
+    margin-top: 48%;
+    left: 86%;
+    background-image: url(${darkMode});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    border-color: transparent;
+    background-color: transparent;
     position: absolute;
     outline: 0;
     cursor: url(${cursor_2}), auto;
-    z-index: 20;
+    z-index: 25;
 
     &:hover {
-        width: 124px;
-        height: 34px;
+        width: 8.2%;
+        min-height: 6.2%;
+        margin-top: 48.2%;
+        left: 86%;
+        background-image: url(${darkModeHover});
     }
 `;
 
 const ThemeToLightButton = styled.button`
-    top: 750px;
-    left: 1300px;
-    width: 120px;
-    height: 33px;
-    font-size: 18px;
-    font-family: 'Poor Story', cursive;
-    color: #FCF6F5FF;
-    border: 3px solid;
-    border-radius: 10px;
-    border-color: #9CC3D5FF;
-    background-color: #9CC3D5FF;
+    width: 8%;
+    min-height: 6%;
+    margin-top: 48%;
+    left: 86%;
+    background-image: url(${lightMode});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    border-color: transparent;
+    background-color: transparent;
     position: absolute;
     outline: 0;
     cursor: url(${cursor_2}), auto;
-    z-index: 20;
+    z-index: 25;
 
     &:hover {
-        width: 124px;
-        height: 34px;
+        width: 8.2%;
+        min-height: 6.2%;
+        margin-top: 48.2%;
+        left: 86%;
+        background-image: url(${lightModeHover});
     }
 `;
 
@@ -283,18 +325,18 @@ export default function ContentMain({ theme, onThemeToDarkHandler, onThemeToLigh
     if (theme === 'light') {
         return (
             <MainWrapper>
-                <ThemeToDarkButton onClick={onThemeToDarkHandler}>🌙 Dark Mode</ThemeToDarkButton>
+                <ThemeToDarkButton onClick={onThemeToDarkHandler}></ThemeToDarkButton>
                 <SateliteWrapper>
                     <Satelite>
-                        <SateliteBody/>
-                        <SateliteHead/>
-                        <SateliteWing1/>
-                        <SateliteWing2/>
+                        <SateliteBody src={sateliteBody} alt='.' />
+                        <SateliteHead src={sateliteHead} alt='.' />
+                        <SateliteWing1 src={fake} alt='.' />
+                        <SateliteWing2 src={fake} alt='.' />
                     </Satelite>
                 </SateliteWrapper>
                 <TextWrapper>
-                    <MainText1>색다르면서도 편안한 경험을 설계하는<br/>프론트엔드 개발자 권은정 입니다</MainText1>
-                    <MainText2>I'm Eunjung Kwon, a front-end developer<br/>who designs unique and comfortable experience</MainText2>
+                    <MainText1 src={fake} alt='.' />
+                    {/* <MainText2>I'm Eunjung Kwon, a front-end developer<br/>who designs unique and comfortable experience</MainText2> */}
                     {/* <MainTextShadow /> */}
                 </TextWrapper>
             </MainWrapper>
@@ -302,18 +344,18 @@ export default function ContentMain({ theme, onThemeToDarkHandler, onThemeToLigh
     } else if (theme === 'dark') {
         return (
             <MainWrapper>
-                <ThemeToLightButton onClick={onThemeToLightHandler}>☀️ Light Mode</ThemeToLightButton>
+                <ThemeToLightButton onClick={onThemeToLightHandler}></ThemeToLightButton>
                 <SateliteWrapper>
                     <Satelite>
-                        <SateliteBody/>
-                        <SateliteHead/>
-                        <SateliteWing1/>
-                        <SateliteWing2/>
+                        <SateliteBody src={sateliteBody} alt='.' />
+                        <SateliteHead src={sateliteHead} alt='.' />
+                        <SateliteWing1 src={fake} alt='.' />
+                        <SateliteWing2 src={fake} alt='.' />
                     </Satelite>
                 </SateliteWrapper>
                 <TextWrapper>
-                    <MainText1>색다르면서도 편안한 경험을 설계하는<br/>프론트엔드 개발자 권은정 입니다</MainText1>
-                    <MainText2>I'm Eunjung Kwon, a front-end developer<br/>who designs unique and comfortable experience</MainText2>
+                    <MainText1 src={fake} alt='.' />
+                    {/* <MainText2>I'm Eunjung Kwon, a front-end developer<br/>who designs unique and comfortable experience</MainText2> */}
                     {/* <MainTextShadow /> */}
                 </TextWrapper>
             </MainWrapper>

@@ -43,7 +43,7 @@ const AstAll = styled.div`
     height: 84.5%;
     // top: 183px;
     // left: 792px;
-    bottom: -9%;
+    bottom: -8%;
     right: 10%;
     background-image: url(${astFixedParts});
     background-repeat: no-repeat;
@@ -132,7 +132,7 @@ const AstLeftArmFront = styled.div`
     height: 27%;
     // top: 586px;
     // left: 417px;
-    bottom: -1.6%;
+    bottom: -0.6%;
     right: 41.8%;
     background-image: url(${astLeftArmFrontBig});
     background-repeat: no-repeat;
@@ -235,7 +235,7 @@ const AstAntenaUnder = styled.div`
     height: 8.5%;
     // top: 385px;
     // left: 1255px;
-    bottom: 42%;
+    bottom: 43%;
     right: 10.3%;
     background-image: url(${antenaUnderBig});
     background-repeat: no-repeat;
@@ -250,7 +250,7 @@ const AstAntena = styled.div`
     height: 25%;
     // top: 213px;
     // left: 1250px;
-    bottom: 49%;
+    bottom: 50%;
     right: 10%;
     background-image: url(${antenaBig});
     background-repeat: no-repeat;
@@ -267,7 +267,7 @@ const AstLight = styled.div`
     height: 8%;
     // top: 194px;
     // left: 1280px;
-    bottom: 65%;
+    bottom: 66%;
     right: 9%;
     background-image: url(${antenaLight});
     background-repeat: no-repeat;
@@ -308,7 +308,7 @@ const Button = styled.div`
 const ButtonText = styled.div`
     width: 11%;
     height: 11%;
-    bottom: 51%;
+    bottom: 52%;
     right: 49.5%;
     background-image: url(${buttonText});
     background-repeat: no-repeat;
@@ -322,7 +322,7 @@ const ButtonText = styled.div`
 const ButtonImg = styled.div`
     width: 90%;
     height: 90%;
-    bottom: -5%;
+    bottom: -4%;
     right: 9.7%;
     background-image: url(${bubble});
     background-repeat: no-repeat;
@@ -335,7 +335,7 @@ const ButtonImg = styled.div`
 const ButtonMouse = styled.button`
     width: 12%;
     height: 12%;
-    bottom: 44.2%;
+    bottom: 45.2%;
     right: 45.4%;
     border: transparent;
     background-color: transparent;
