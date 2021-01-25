@@ -46,8 +46,10 @@ const blink = keyframes`
 const IntroText = styled.p`
     width: 25%;
     height: 8%;
-    top: 45%;
+    top: 47%;
     left: 50.3%;
+    padding: 0;
+    margin: 0;
     background-image: url(${welcome});
     background-repeat: no-repeat;
     background-size: contain;

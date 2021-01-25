@@ -274,8 +274,8 @@ const MainText1 = styled.img`
 const ThemeToDarkButton = styled.button`
     width: 8%;
     min-height: 6%;
-    margin-top: 48%;
-    left: 86%;
+    margin-top: 46%;
+    left: 84%;
     background-image: url(${darkMode});
     background-repeat: no-repeat;
     background-size: contain;
@@ -290,8 +290,8 @@ const ThemeToDarkButton = styled.button`
     &:hover {
         width: 8.2%;
         min-height: 6.2%;
-        margin-top: 48.2%;
-        left: 86%;
+        margin-top: 46.2%;
+        left: 84%;
         background-image: url(${darkModeHover});
     }
 `;
@@ -299,8 +299,8 @@ const ThemeToDarkButton = styled.button`
 const ThemeToLightButton = styled.button`
     width: 8%;
     min-height: 6%;
-    margin-top: 48%;
-    left: 86%;
+    margin-top: 46%;
+    left: 84%;
     background-image: url(${lightMode});
     background-repeat: no-repeat;
     background-size: contain;
@@ -315,8 +315,8 @@ const ThemeToLightButton = styled.button`
     &:hover {
         width: 8.2%;
         min-height: 6.2%;
-        margin-top: 48.2%;
-        left: 86%;
+        margin-top: 46.2%;
+        left: 84%;
         background-image: url(${lightModeHover});
     }
 `;

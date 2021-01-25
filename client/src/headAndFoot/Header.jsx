@@ -25,8 +25,10 @@ const HeaderWrapper = styled.div`
 const HeaderText = styled.p`
     width: 43%;
     height: 27%;
-    top: 30%;
+    top: 45%;
     left: 50%;
+    padding: 0;
+    margin: 0; // 화면 엄청 작아졌을 때 기본 margin 때문에 header가 아래로 밀리는 것을 막아 줌
     background-image: url(${welcome});
     background-repeat: no-repeat;
     background-size: contain;

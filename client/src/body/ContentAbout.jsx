@@ -180,37 +180,37 @@ const AstLeftArmFront = styled.div`
 // `;
 
 const MoveAntena = keyframes`
-    0% { transform: translate(0, 0px) };
-    8% { transform: translate(0, 4px) };
-    16% { transform: translate(0, 8px) };
-    24% { transform: translate(0, 12px) };
-    32% { transform: translate(0, 8px) };
-    40% { transform: translate(0, 8px) };
-    50% { transform: translate(0, 12px) };
-    58% { transform: translate(0, 16px) };
-    66% { transform: translate(0, 20px) };
-    74% { transform: translate(0, 16px) };
-    82% { transform: translate(0, 12px) };
-    90% { transform: translate(0, 8px) };
-    95% { transform: translate(0, 4px) };
-    100% { transform: translate(0, 0px) };
+    0% { transform: translate(0, 0%) };
+    8% { transform: translate(0, 2%) };
+    16% { transform: translate(0, 4%) };
+    24% { transform: translate(0, 6%) };
+    32% { transform: translate(0, 4%) };
+    40% { transform: translate(0, 4%) };
+    50% { transform: translate(0, 6%) };
+    58% { transform: translate(0, 8%) };
+    66% { transform: translate(0, 10%) };
+    74% { transform: translate(0, 8%) };
+    82% { transform: translate(0, 6%) };
+    90% { transform: translate(0, 4%) };
+    95% { transform: translate(0, 2%) };
+    100% { transform: translate(0, 0%) };
 `;
 
 const LightMove = keyframes`
-    0% { transform: translate(0, 0px) };
-    8% { transform: translate(0, 4px) };
-    16% { transform: translate(0, 8px) };
-    24% { transform: translate(0, 12px) };
-    32% { transform: translate(0, 8px) };
-    40% { transform: translate(0, 8px) };
-    50% { transform: translate(0, 12px) };
-    58% { transform: translate(0, 16px) };
-    66% { transform: translate(0, 20px) };
-    74% { transform: translate(0, 16px) };
-    82% { transform: translate(0, 12px) };
-    90% { transform: translate(0, 8px) };
-    95% { transform: translate(0, 4px) };
-    100% { transform: translate(0, 0px) };
+    0% { transform: translate(0, 0%) };
+    8% { transform: translate(0, 2%) };
+    16% { transform: translate(0, 4%) };
+    24% { transform: translate(0, 6%) };
+    32% { transform: translate(0, 4%) };
+    40% { transform: translate(0, 4%) };
+    50% { transform: translate(0, 6%) };
+    58% { transform: translate(0, 8%) };
+    66% { transform: translate(0, 10%) };
+    74% { transform: translate(0, 8%) };
+    82% { transform: translate(0, 6%) };
+    90% { transform: translate(0, 4%) };
+    95% { transform: translate(0, 2%) };
+    100% { transform: translate(0, 0%) };
 `;
 
 const LightBlink = keyframes`
@@ -276,6 +276,7 @@ const AstLight = styled.div`
     position: absolute;
     animation: ${LightMove} 4s steps(14) infinite, ${LightBlink} 4s steps(14) infinite;
     animation-direction: alternate;
+    z-index: 10;
 `;
 
 // const TextWrapper = styled.div`
