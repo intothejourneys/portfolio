@@ -21,7 +21,7 @@ import cursor_2 from '../img/cursor_2.cur';
 
   const GoingUp = keyframes`
     0% {
-      top: 45%;
+      top: 46%;
     }
     10% {
       top: 40%;
@@ -69,7 +69,7 @@ import cursor_2 from '../img/cursor_2.cur';
   const IntroCopyText = styled.p`
     width: 25%;
     height: 8%;
-    top: 45%;
+    top: 46%;
     left: 50.35%;
     padding: 0;
     margin: 0;

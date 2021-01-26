@@ -21,6 +21,9 @@ import bar from '../img/spaceship_bar.png';
 import circle from '../img/spaceship_circle.png';
 import light from '../img/spaceship_light.png';
 
+import start from '../img/start.svg';
+import stop from '../img/stop.svg';
+
 import cursor_2 from '../img/cursor_2.cur';
 
 const Desolve = keyframes`
@@ -29,115 +32,137 @@ const Desolve = keyframes`
 `;
 
 const WorksWrapper = styled.div`
+    width: 100%;
+    height: 100%;
     display: flex;
     animation: ${Desolve} 3s ease;
 `;
 
 const Background = styled.div`
-    top: -115px;
-    left: -455px;
-    width: 1986px;
-    height: 968px;
+    top: -27.2%;
+    left: -27.5%;
+    width: 127.2%;
+    height: 135%;
+    padding: 0;
+    margin: 0;
     background-image: url(${background});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
 `;
 
 const BarMove = keyframes`
-    0% { left: 800px; };
-    8% { left: 810px; };
-    16% { left: 830px; };
-    24% { left: 880px; };
-    32% { left: 850px; };
-    40% { left: 852px; };
-    50% { left: 850px; };
-    58% { left: 820px; };
-    66% { left: 822px; };
-    74% { left: 820px; };
-    82% { left: 900px; };
-    90% { left: 920px; };
-    100% { left: 800px; };
+    0% { left: 50.2%; };
+    8% { left: 51.5%; };
+    16% { left: 55.5%; };
+    24% { left: 57.5%; };
+    32% { left: 52.5%; };
+    40% { left: 53%; };
+    50% { left: 52.5%; };
+    58% { left: 50.5%; };
+    66% { left: 51%; };
+    74% { left: 50.5%; };
+    82% { left: 54.5%; };
+    90% { left: 57.5%; };
+    100% { left: 50.2%; };
 `;
 
 const Bar = styled.div`
-    top: 717px;
-    left: 790px;
-    width: 30px;
-    height: 60px;
+    top: 90.7%;
+    left: 50.2%;
+    width: 3%;
+    height: 5.5%;
+    padding: 0;
+    margin: 0;
     background-image: url(${bar});
     background-repeat: no-repeat;
-    animation: ${BarMove} 7s ease infinite;
+    background-size: contain;
+    background-position: bottom;
+    animation: ${BarMove} 7s linear infinite;
     position: absolute;
 `;
 
 const Circle1Move = keyframes`
-    0% { left: 800px; };
-    50% { left: 900px; };
-    100% { left: 800px; };
+    0% { left: 51.2%; };
+    50% { left: 61.2%; };
+    100% { left: 51.2%; };
 `;
 
 const Circle1 = styled.div`
-    top: 618px;
-    left: 800px;
-    width: 30px;
-    height: 30px;
+    top: 78.2%;
+    left: 51.2%;
+    width: 2%;
+    height: 2%;
+    padding: 0;
+    margin: 0;
     background-image: url(${circle});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     animation: ${Circle1Move} 8s ease infinite;
     position: absolute;
 `;
 
 const Circle2Move = keyframes`
-    0% { left: 850px; };
-    100% { left: 1130px; };
+    0% { left: 51.2%; };
+    100% { left: 71.2%; };
 `;
 
 const Circle2 = styled.div`
-    top: 648px;
-    left: 850px;
-    width: 30px;
-    height: 30px;
+    top: 82.3%;
+    left: 51.2%;
+    width: 2%;
+    height: 2%;
+    padding: 0;
+    margin: 0;
     background-image: url(${circle});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     animation: ${Circle2Move} 15s linear infinite;
     position: absolute;
 `;
 
 const Circle3Move = keyframes`
-    0% { top: 598px; left: 975px; };
-    4% { top: 602px; left: 982px; };
-    8% { top: 606px; left: 989px; };
-    12% { top: 610px; left: 996px; };
-    16% { top: 614px; left: 1003px; };
-    20% { top: 618px; left: 1005px; };
-    24% { top: 622px; left: 1002px; };
-    28% { top: 626px; left: 999px; };
-    32% { top: 630px; left: 996px; };
-    36% { top: 634px; left: 993px; };
-    40% { top: 638px; left: 990px; };
-    45% { top: 642px; left: 987px; };
-    50% { top: 646px; left: 984px; };
-    55% { top: 642px; left: 987px; };
-    60% { top: 638px; left: 990px; };
-    64% { top: 634px; left: 993px; };
-    68% { top: 630px; left: 996px; };
-    72% { top: 626px; left: 999px; };
-    76% { top: 622px; left: 1002px; };
-    80% { top: 618px; left: 1005px; }; 
-    84% { top: 614px; left: 1003px; };
-    88% { top: 610px; left: 996px; };
-    92% { top: 606px; left: 989px; };
-    96% { top: 602px; left: 982px; };
-    100% { top: 598px; left: 975px; };
+    0% { top: 76%; left: 61.2%; };
+    4% { top: 76.5%; left: 61.6%; };
+    8% { top: 77%; left: 62.1%; };
+    12% { top: 77.5%; left: 62.2%; };
+    16% { top: 78%; left: 62.25%; };
+    20% { top: 78.5%; left: 62.3%; };
+    24% { top: 79%; left: 62.25%; };
+    28% { top: 79.5%; left: 62.2%; };
+    32% { top: 80%; left: 62.1%; };
+    36% { top: 80.5%; left: 62%; };
+    40% { top: 81%; left: 61.8%; };
+    45% { top: 81.5%; left: 61.6%; };
+    50% { top: 82%; left: 61.4%; };
+    55% { top: 81.5%; left: 61.6%; };
+    60% { top: 81%; left: 61.8%; };
+    64% { top: 80.5%; left: 62%; };
+    68% { top: 80%; left: 62.1%; };
+    72% { top: 79.5%; left: 62.2%; };
+    76% { top: 79%; left: 62.25%; };
+    80% { top: 78.5%; left: 62.3%; }; 
+    84% { top: 78%; left: 62.25%; };
+    88% { top: 77.5%; left: 62.2%; };
+    92% { top: 77%; left: 62.1%; };
+    96% { top: 76.5%; left: 61.6%; };
+    100% { top: 76%; left: 61.2%; };
 `;
 
 const Circle3 = styled.div`
-    top: 598px;
-    left: 975px;
-    width: 30px;
-    height: 30px;
+    top: 76%;
+    left: 61.2%;
+    width: 2%;
+    height: 2%;
+    padding: 0;
+    margin: 0;
     background-image: url(${circle});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     animation: ${Circle3Move} 15s steps(25) infinite;
     position: absolute;
 `;
@@ -149,30 +174,35 @@ const Blink = keyframes`
 `;
 
 const Light = styled.div`
-    top: 719.2px;
-    left: -95px;
-    width: 50px;
-    height: 50px;
+    top: 91.4%;
+    left: -9.2%;
+    width: 4%;
+    height: 4%;
+    
     background-image: url(${light});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     animation: ${Blink} 2s ease infinite;
     position: absolute;
 `;
 
 const OnOff = styled.button`
-    top: 547px;
-    left: 145px;
-    width: 100px;
-    height: 30px;
-    color: #FCF6F5FF;
-    font-size: 12px;
-    font-weight: 200;
-    font-family: 'Press Start 2P', cursive;
+    top: 68.9%;
+    left: 6.75%;
+    width: 7%;
+    height: 4%;
+    padding: 0;
+    margin: 0;
+    // color: #FCF6F5FF;
+    // font-size: 0.8vw;
+    // font-weight: 200;
+    // font-family: 'Press Start 2P', cursive;
     border: 3px solid;
     border-color: #F10058;
     border-radius: 10px;
     background-color: #F10058;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     position: absolute;
     outline: 0;
     z-index: 20;
@@ -180,11 +210,21 @@ const OnOff = styled.button`
     &:hover {
         cursor: url(${cursor_2}), auto;
         background: ${lighten(0.01, '#F10058')};
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+        // box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
     }
     &:active {
         background: ${darken(0.02, '#F10058')};
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+        // box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+`;
+
+const StartStop = styled.img`
+    top: 0%;
+    left: 6%;
+    width: 90%;
+    min-height: 90%;
+    background-size: contain;
+    background-position: bottom;
+    position: absolute;
 `;
 
 // const LabelReset = styled.label`
@@ -199,14 +239,14 @@ const OnOff = styled.button`
 export default function ContentWorks({ onFoldToWorksHandler }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const [startButton, setStartButton] = useState('START');
+    const [startButton, setStartButton] = useState(start);
 
     const onStartButtonHandler = () => {
-        setStartButton('STOP');
+        setStartButton(stop);
     };
 
     const onStopButtonHandler = () => {
-        setStartButton('START');
+        setStartButton(start);
     };
 
     // const [disable, setDisable] = useState({
@@ -454,7 +494,7 @@ export default function ContentWorks({ onFoldToWorksHandler }) {
                 <Circle2 />
                 <Circle3 />
                 <Light />
-                <OnOff onClick={onModalOpenHandler}>{startButton}</OnOff>
+                <OnOff onClick={onModalOpenHandler}><StartStop src={startButton} /></OnOff>
                 {/* <OnOffLightPortfolio />
                 <OnOffLightPortfolio />
                 <OnOffLightPortfolio />
@@ -482,7 +522,7 @@ export default function ContentWorks({ onFoldToWorksHandler }) {
                     <Circle2 />
                     <Circle3 />
                     <Light />
-                    <OnOff onClick={onModalOpenHandler}>{startButton}</OnOff>
+                    <OnOff onClick={onModalOpenHandler}><StartStop src={startButton} /></OnOff>
                     {/* <OnOffLightPortfolio />
                     <OnOffLightPortfolio />
                     <OnOffLightPortfolio />
@@ -509,7 +549,7 @@ export default function ContentWorks({ onFoldToWorksHandler }) {
                     <Circle2 />
                     <Circle3 />
                     <Light />
-                    <OnOff onClick={onModalOpenHandler}>{startButton}</OnOff>
+                    <OnOff onClick={onModalOpenHandler}><StartStop src={startButton} /></OnOff>
                     {/* <OnOffLightPortfolio />
                     <OnOffLightPortfolio />
                     <OnOffLightPortfolio />
@@ -539,7 +579,7 @@ export default function ContentWorks({ onFoldToWorksHandler }) {
                     <Circle2 />
                     <Circle3 />
                     <Light />
-                    <OnOff onClick={onModalOpenHandler}>{startButton}</OnOff>
+                    <OnOff onClick={onModalOpenHandler}><StartStop src={startButton} /></OnOff>
                     {/* <OnOffLightPortfolio />
                     <OnOffLightPortfolio />
                     <OnOffLightPortfolio />
@@ -569,7 +609,7 @@ export default function ContentWorks({ onFoldToWorksHandler }) {
                     <Circle2 />
                     <Circle3 />
                     <Light />
-                    <OnOff onClick={onModalOpenHandler}>{startButton}</OnOff>
+                    <OnOff onClick={onModalOpenHandler}><StartStop src={startButton} /></OnOff>
                     {/* <OnOffLightPortfolio />
                     <OnOffLightPortfolio />
                     <OnOffLightPortfolio />
@@ -599,7 +639,7 @@ export default function ContentWorks({ onFoldToWorksHandler }) {
                     <Circle2 />
                     <Circle3 />
                     <Light />
-                    <OnOff onClick={onModalOpenHandler}>{startButton}</OnOff>
+                    <OnOff onClick={onModalOpenHandler}><StartStop src={startButton} /></OnOff>
                     {/* <OnOffLightPortfolio />
                     <OnOffLightPortfolio />
                     <OnOffLightPortfolio />

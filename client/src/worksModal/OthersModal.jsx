@@ -2,24 +2,28 @@ import React from 'react';
 
 import styled, { keyframes } from 'styled-components';
 
+import forResponsive from '../img/works_comingsoon.svg';
+
 const Desolve = keyframes`
     0% { opacity: 0% }
     100% { opacity: 100% }
 `;
 
 const Wrapper = styled.div` 
+    width: 100%;
+    height: 100%;
     display: flex;
 `;
 
 const Contents = styled.div`
-    top: -460px;
-    left: -140px;
-    width: 793px;
-    height: 400px;
-    color: #606060;
-    font-size: 18px;
-    font-weight: 200; 
-    font-family: 'Poor Story', cursive;
+    top: -830%;
+    left: -120%;
+    width: 700%;
+    height: 700%;
+    // color: #606060;
+    // font-size: 18px;
+    // font-weight: 200; 
+    // font-family: 'Poor Story', cursive;
     animation: ${Desolve} 3s ease;
     position: absolute;
     overflow: auto;
@@ -40,23 +44,37 @@ const Contents = styled.div`
     }
 `;
 
-const Title = styled.h2`
-    top: 150px;
-    left: 90px;
-    width: 300px;
-    height: 30px;
-    color: #606060;
-    font-family: 'Press Start 2P', cursive;
+const All = styled.div`
+    top: 36%;
+    left: 10%;
+    width: 50%;
+    height: 20%;
+    background-image: url(${forResponsive});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
-    float: left;
+    z-index: 5;
 `;
+
+// const Title = styled.h2`
+//     top: 150px;
+//     left: 90px;
+//     width: 300px;
+//     height: 30px;
+//     color: #606060;
+//     font-family: 'Press Start 2P', cursive;
+//     position: absolute;
+//     float: left;
+// `;
 
 export default function OthersModal({ isOthersModalOpen }) {
     if (isOthersModalOpen === true) {
         return (
             <Wrapper>
                 <Contents>
-                    <Title>Coming soon</Title>
+                    <All />
+                    {/* <Title>Coming soon</Title> */}
                 </Contents>
             </Wrapper>
         )

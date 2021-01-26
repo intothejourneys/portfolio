@@ -1,8 +1,8 @@
 .hobbystagram_toggle {
-    top: 538px;
-    left: 414px;
-    width: 70px;
-    height: 50px;
+    top: 67.8%;
+    left: 23.3%;
+    width: 7%;
+    height: 7%;
     position: absolute;
     z-index: 30;
 }
@@ -16,10 +16,12 @@
 .hobbystagram_toggle label {
     display: block;
     position: relative;
-    width: 70px;
-    height: 50px;
+    width: 90%;
+    height: 90%;
     background-image: url('../img/button_bar.png');
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
 }
 
 .hobbystagram_toggle label:hover {
@@ -30,13 +32,15 @@
     /* 동그라미 */
     content:""; 
     position: absolute;  
-    width: 70px; 
-    height: 50px; 
+    width: 90%;
+    height: 90%; 
 }
 
 .hobbystagram_toggle input:checked + label { 
     background-image: url('../img/button_bar_right.png');
     background-repeat: no-repeat;
-    margin-left: 13px;
+    background-size: contain;
+    background-position: bottom;
+    margin-left: 11%;
     /* transition: all 0.1s; */
 }

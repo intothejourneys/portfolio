@@ -25,10 +25,10 @@ const TextureBlink = keyframes`
 `;
 
 const Texture = styled.div`
-    top: -10px;
-    left: 177px;
-    width: 800px;
-    height: 410px;
+    top: 0%;
+    left: 10.1%;
+    width: 50%;
+    height: 50%;
     background-image: url(${WorksTextTexture});
     animation: ${Desolve} 3s ease, ${TextureBlink} 1s ease;
     opacity: 0.8;
@@ -38,10 +38,10 @@ const Texture = styled.div`
 `;
 
 const ModalFrame = styled.div`
-    top: 70px;
-    left: 190px;
-    width: 800px;
-    height: 410px;
+    top: 10%;
+    left: 10.9%;
+    width: 50%;
+    height: 50%;
     border: 3px solid;
     border-radius: 10px;
     border-color: #FCF6F5FF;

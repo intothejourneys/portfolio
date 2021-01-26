@@ -46,7 +46,7 @@ const blink = keyframes`
 const IntroText = styled.p`
     width: 25%;
     height: 8%;
-    top: 47%;
+    top: 46%;
     left: 50.3%;
     padding: 0;
     margin: 0;

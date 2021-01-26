@@ -55,10 +55,10 @@ const ModalClose = styled.button`
 `;
 
 const ModalText1 = styled.div`
-    width: 38%;
-    height: 32%;
-    bottom: 41%;
-    right: 32%;
+    width: 42%;
+    height: 35%;
+    bottom: 43.2%;
+    right: 28.2%;
     // font-size: 16px;
     // font-weight: 200;
     // font-family: 'Poor Story', cursive;
@@ -72,10 +72,10 @@ const ModalText1 = styled.div`
 `;
 
 const ModalText2 = styled.div`
-    width: 40%;
+    width: 42%;
     height: 35%;
-    bottom: 43.5%;
-    right: 30%;
+    bottom: 42.5%;
+    right: 28.2%;
     // font-size: 16px;
     // font-weight: 200;
     // font-family: 'Poor Story', cursive;
@@ -90,9 +90,9 @@ const ModalText2 = styled.div`
 
 const KorToEng = styled.button`
     width: 5%;
-    height: 4%;
-    bottom: 72%;
-    right: 29.2%;
+    height: 3.5%;
+    bottom: 72.1%;
+    right: 66.2%;
     padding: 0;
     margin: 0;
     // color: #ffffff;
@@ -115,9 +115,9 @@ const KorToEng = styled.button`
 
 const EngToKor = styled.button`
     width: 5%;
-    height: 4%;
-    bottom: 72%;
-    right: 29.2%;
+    height: 3.5%;
+    bottom: 72.1%;
+    right: 66.2%;
     padding: 0;
     margin: 0;
     // color: #ffffff;
