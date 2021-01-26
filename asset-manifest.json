@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a204541b.chunk.css",
-    "main.js": "/portfolio/static/js/main.3d8e9b28.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.3d8e9b28.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.adf8b8ad.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.adf8b8ad.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.2a157abb.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.2a157abb.js.map",
     "static/js/2.c8ffbb69.chunk.js": "/portfolio/static/js/2.c8ffbb69.chunk.js",
@@ -24,7 +24,7 @@
     "static/media/WORKS.de574bfb.svg": "/portfolio/static/media/WORKS.de574bfb.svg",
     "static/media/WORKS_hover.b69ba61c.svg": "/portfolio/static/media/WORKS_hover.b69ba61c.svg",
     "static/media/aboutModalX.d77292fd.svg": "/portfolio/static/media/aboutModalX.d77292fd.svg",
-    "static/media/ast_left_arm_1_big.b93794ea.png": "/portfolio/static/media/ast_left_arm_1_big.b93794ea.png",
+    "static/media/ast_left_arm_1_big.67804e26.png": "/portfolio/static/media/ast_left_arm_1_big.67804e26.png",
     "static/media/astronaut_body_together.7e6463d6.png": "/portfolio/static/media/astronaut_body_together.7e6463d6.png",
     "static/media/App.css": "/portfolio/static/media/background.0dc0248a.png",
     "static/media/bubble.c5b65c71.png": "/portfolio/static/media/bubble.c5b65c71.png",
@@ -88,6 +88,6 @@
     "static/js/runtime-main.2a157abb.js",
     "static/js/2.c8ffbb69.chunk.js",
     "static/css/main.a204541b.chunk.css",
-    "static/js/main.3d8e9b28.chunk.js"
+    "static/js/main.adf8b8ad.chunk.js"
   ]
 }
