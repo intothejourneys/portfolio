@@ -218,10 +218,10 @@ const OnOff = styled.button`
 `;
 
 const StartStop = styled.img`
-    top: 0%;
-    left: 6%;
-    width: 90%;
-    min-height: 90%;
+    top: 9%;
+    left: 16%;
+    width: 70%;
+    min-height: 50%;
     background-size: contain;
     background-position: bottom;
     position: absolute;

@@ -13,12 +13,13 @@ import emailButtonBeforeHover from '../img/emailButtonBefore_hover.png';
 import emailButtonBeforeActive from '../img/emailButtonBefore_active.png';
 import emailButtonAfter from '../img/emailButtonAfter.png';
 // import clickToCopy from '../img/clickToCopy.png';
-import clickToCopy2 from '../img/clickToCopy_use.png';
-import copied from '../img/copied_use.png';
+import clickToCopy2 from '../img/clickToCopy.svg';
+import copied from '../img/copied.svg';
 import blog from '../img/blog.png';
 import github from '../img/github.png';
 import youtube from '../img/youtube.png';
 import insta from '../img/insta.png';
+import email from '../img/email.svg';
 
 import cursor_2 from '../img/cursor_2.cur';
 
@@ -28,29 +29,33 @@ const Desolve = keyframes`
 `;
 
 const Wrapper = styled.div`
+    width: 100%;
+    height: 100%;
     animation: ${Desolve} 3s ease;
     display: flex;
 `;
 
 const Earth = styled.div`
-    top: 50%;
-    left: 50%;
-    margin-top: -195px;
-    margin-left: -390px;
-    width: 390px;
-    height: 390px;
+    top: 26%;
+    left: 12.5%;
+    width: 50%;
+    height: 50%;
     background-image: url(${earth});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
 `;
 
 const Blog = styled.a`
-    top: 230px;
-    left: 500px;
-    width: 30px;
-    height: 30px;
+    top: 53.2%;
+    left: 31.5%;
+    width: 4%;
+    height: 4%;
     background-image: url(${blog});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     animation: ${Desolve} 1s ease;
     position: absolute;
     z-index: 30;
@@ -66,82 +71,108 @@ const Blog = styled.a`
 `;
 
 const Github = styled.a`
-    top: 423px;
-    left : 515px;
-    width: 30px;
-    height: 30px;
+    top: 64.2%;
+    left: 27.5%;
+    width: 6%;
+    height: 4%;
     background-image: url(${github});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    transform: rotate(44deg);
     animation: ${Desolve} 1s ease;
     position: absolute;
     z-index: 30;
 
     &:hover {
         cursor: url(${cursor_2}), auto;
-        transform: scale(1.1);
+        transform: rotate(44deg) scale(1.1);
     }
     &:active {
         cursor: url(${cursor_2}), auto;
-        transform: scale(0.9);
+        transform: rotate(44deg) scale(0.9);
     }
 `;
 
 const Youtube = styled.a`
-    top: 322px;
-    left: 430px;
-    width: 30px;
-    height: 30px;
+    top: 38.4%;
+    left: 26.1%;
+    width: 7%;
+    height: 4%;
     background-image: url(${youtube});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    transform: rotate(-50deg);
     animation: ${Desolve} 1s ease;
     position: absolute;
     z-index: 30;
 
     &:hover {
         cursor: url(${cursor_2}), auto;
-        transform: scale(1.1);
+        transform: rotate(-50deg) scale(1.1);
     }
     &:active {
         cursor: url(${cursor_2}), auto;
-        transform: scale(0.9);
+        transform: rotate(-50deg) scale(0.9);
     }
 `;
 
 const Insta = styled.a`
-    top: 365px;
-    left: 738px;
-    width: 20px;
-    height: 30px;
+    top: 49%;
+    left: 45%;
+    width: 4%;
+    height: 4%;
     background-image: url(${insta});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    transform: rotate(-60deg);
     animation: ${Desolve} 1s ease;
     position: absolute;
     z-index: 30;
 
     &:hover {
         cursor: url(${cursor_2}), auto;
-        transform: scale(1.1);
+        transform: rotate(-60deg) scale(1.1);
     }
     &:active {
         cursor: url(${cursor_2}), auto;
-        transform: scale(0.9);
+        transform: rotate(-60deg) scale(0.9);
     }
 `;
 
 const Path = styled.path`
-    top: 82px;
-    left: 266px;
-    width: 630px;
-    height: 630px;
+    top: 10.5%;
+    left: 12.8%;
+    width: 50%;
+    height: 80%;
     background-image: url(${path});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
 `;
 
 const Move = keyframes`
-    100% { 
-        motion-offset: 100%;
-        offset-distance: 100%;
+    // 100% { 
+    //     motion-offset: 100%;
+    //     offset-distance: 100%;
+    // }
+    from { 	
+        transform: rotate(0deg) translateX(510%) rotate(0deg); 
+    }
+	to   {  
+        transform: rotate(360deg) translateX(510%) rotate(-360deg); 
+    }
+`;
+
+const Move2 = keyframes`
+    from { 	
+        transform: rotate(0deg) translateX(510%); 
+    }
+	to   {  
+        transform: rotate(360deg) translateX(510%); 
     }
 `;
 
@@ -167,17 +198,19 @@ const Move = keyframes`
 // `;
 
 const Rocket = styled.div`
-    top: 86px;
-    left: 270px;
-    width: 160px;
-    height: 95px;
+    top: 44.4%;
+    left: 35.8%;
+    width: 4%;
+    height: 12%;
     background-image: url(${rocket});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
 
-    motion-path: path("M 310, 310 m -310, 0 a 310,310 0 1,0 620,0 a 310,310 0 1,0 -620,0");
-    offset-path: path("M 310, 310 m -310, 0 a 310,310 0 1,0 620,0 a 310,310 0 1,0 -620,0");
-    animation: ${Move} 10s linear infinite;
+    // motion-path: path("M 310, 310 m -310, 0 a 310,310 0 1,0 620,0 a 310,310 0 1,0 -620,0");
+    // offset-path: path("M 310, 310 m -310, 0 a 310,310 0 1,0 620,0 a 310,310 0 1,0 -620,0");
+    animation: ${Move} 10s linear infinite, ${Move2} 10s linear infinite;
 
     &:hover {
         cursor: url(${cursor_2}), auto;
@@ -192,12 +225,16 @@ const Rocket = styled.div`
 `;
 
 const RocketClick = styled.div`
-    top: -20px;
-    left: -10px;
-    width: 160px;
-    height: 95px;
+    top: -100%;
+    left: -16.5%;
+    width: 130%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     background-image: url(${rocketClick});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
 `;
 
@@ -224,16 +261,26 @@ const RocketClick = styled.div`
 //     z-index: 19;
 // `;
 
+const Email = styled.img`
+    margin-top: 2.5%;
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    background-size: contain;
+    background-position: bottom;
+    position: absolute;
+`;
+
 const EMailBefore = styled.div`
-    top: 380px;
-    left: 475px;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: 'Poor Story', cursive;
-    text-align: center;
-    color: #606060;
+    top: 48%;
+    left: 30.5%;
+    width: 14%;
+    height: 5%;
+    line-height: 20%;
+    // font-size: 18px;
+    // font-family: 'Poor Story', cursive;
+    // text-align: center;
+    // color: #606060;
     // border: 0.1px solid;
     border-radius: 15px;
     // border-color: #606060;
@@ -245,15 +292,15 @@ const EMailBefore = styled.div`
 `;
 
 const EMailAfter = styled.div`
-    top: 380px;
-    left: 475px;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: 'Poor Story', cursive;
-    text-align: center;
-    color: #606060;
+    top: 48%;
+    left: 30.5%;
+    width: 14%;
+    height: 5%;
+    line-height: 20%;
+    // font-size: 18px;
+    // font-family: 'Poor Story', cursive;
+    // text-align: center;
+    // color: #606060;
     // border: 0.1px solid;
     border-radius: 15px;
     // border-color: #54FF75;
@@ -264,14 +311,16 @@ const EMailAfter = styled.div`
 `;
 
 const EMailCopyBefore = styled.button`
-    top: 365px;
-    left: 660px;
-    width: 35px;
-    height: 40px;
+    top: 45.5%;
+    left: 41.9%;
+    width: 5%;
+    height: 5%;
     border: transparent;
     background-color: transparent;
     background-image: url(${emailButtonBefore});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     animation: ${Desolve} 1s ease;
     position: absolute;
     cursor: url(${cursor_2}), auto;
@@ -287,14 +336,16 @@ const EMailCopyBefore = styled.button`
 `;
 
 const EMailCopyAfter = styled.button`
-    top: 365px;
-    left: 660px;
-    width: 35px;
-    height: 40px;
+    top: 45.5%;
+    left: 41.9%;
+    width: 5%;
+    height: 5%;
     border: transparent;
     background-color: transparent;
     background-image: url(${emailButtonAfter});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     cursor: url(${cursor_2}), auto;
     outline: 0;
@@ -316,31 +367,35 @@ const EMailCopyAfter = styled.button`
 // `;
 
 const ClickToCopy = styled.span`
-    top: -44px;
-    left: -41px;
-    width: 120px;
-    height: 40px;
-    padding-top: 3px;
-    color: #FCF6F5FF;
-    font-family: 'Jua', sans-serif;
-    font-size: 14px;
+    top: -120%;
+    left: -21%;
+    width: 140%;
+    height: 120%;
+    // padding-top: 3px;
+    // color: #FCF6F5FF;
+    // font-family: 'Jua', sans-serif;
+    // font-size: 14px;
     background-image: url(${clickToCopy2});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
     animation: ${Desolve} 1s ease;
 `;
 
 const Copied = styled.span`
-    top: -44px;
-    left: -30px;
-    width: 100px;
-    height: 40px;
-    padding-top: 3px;
-    color: #FCF6F5FF;
-    font-family: 'Jua', sans-serif;
-    font-size: 14px;
+    top: -94.5%;
+    left: -8.5%;
+    width: 115%;
+    height: 95%;
+    // padding-top: 3px;
+    // color: #FCF6F5FF;
+    // font-family: 'Jua', sans-serif;
+    // font-size: 14px;
     background-image: url(${copied});
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: absolute;
 `;
 
@@ -420,7 +475,9 @@ export default function ContentContact() {
                 {/* </svg> */}
                 <Earth />
                 <Path />
-                <Rocket onClick={showOrHideMyInfo}><RocketClick /></Rocket>
+                <Rocket onClick={showOrHideMyInfo}>
+                    <RocketClick />
+                </Rocket>
                 {/* <Fire /> */}
             </Wrapper>
         )
@@ -429,7 +486,7 @@ export default function ContentContact() {
         if (isCopyOrNot.copy === false) {
             return (
                 <Wrapper>
-                    <EMailBefore>{EMailCopy}</EMailBefore>
+                    <EMailBefore><Email src={email} /></EMailBefore>
                     {/* <EMailCopyBefore onMouseOver={copyShowHandler} onMouseOut={copyShowHandler} onClick={copyOrNotHandler}> */}
                     <CopyToClipboard text={EMailCopy}>
                     {/* onCopy={copyOrNotHandler({copy: true})} */}
@@ -452,7 +509,7 @@ export default function ContentContact() {
         } else if (isCopyOrNot.copy === true) {
             return (
                 <Wrapper>
-                    <EMailAfter>{EMailCopy}</EMailAfter>
+                    <EMailAfter><Email src={email} /></EMailAfter>
                     <EMailCopyAfter>
                         {/* {isCopyShow && (
                             <CopyInfo>{isCopyOrNot.text}</CopyInfo> */}
