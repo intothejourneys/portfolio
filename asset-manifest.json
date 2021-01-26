@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.412724dd.chunk.css",
-    "main.js": "/portfolio/static/js/main.5407ed8f.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.5407ed8f.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.3f8e90a9.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.3f8e90a9.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.2a157abb.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.2a157abb.js.map",
     "static/js/2.c8ffbb69.chunk.js": "/portfolio/static/js/2.c8ffbb69.chunk.js",
@@ -29,11 +29,14 @@
     "static/media/App.css": "/portfolio/static/media/background.0dc0248a.png",
     "static/media/bubble.c5b65c71.png": "/portfolio/static/media/bubble.c5b65c71.png",
     "static/media/bubble_big.ac2dfeb7.png": "/portfolio/static/media/bubble_big.ac2dfeb7.png",
+    "static/media/clickToCopy.3d0c6b27.svg": "/portfolio/static/media/clickToCopy.3d0c6b27.svg",
+    "static/media/copied.4c60b006.svg": "/portfolio/static/media/copied.4c60b006.svg",
     "static/media/cursor_1.4a0faf66.cur": "/portfolio/static/media/cursor_1.4a0faf66.cur",
     "static/media/OthersToggle.css": "/portfolio/static/media/cursor_2.b642a301.cur",
     "static/media/darkMode.6b80988e.svg": "/portfolio/static/media/darkMode.6b80988e.svg",
     "static/media/darkMode_hover.11525198.svg": "/portfolio/static/media/darkMode_hover.11525198.svg",
     "static/media/earth.3fcf1190.png": "/portfolio/static/media/earth.3fcf1190.png",
+    "static/media/email.9d99199a.svg": "/portfolio/static/media/email.9d99199a.svg",
     "static/media/etc_bubble.db357109.svg": "/portfolio/static/media/etc_bubble.db357109.svg",
     "static/media/flag_flag_1.79e271f3.png": "/portfolio/static/media/flag_flag_1.79e271f3.png",
     "static/media/flag_flag_1_hover.0cb97bdf.png": "/portfolio/static/media/flag_flag_1_hover.0cb97bdf.png",
@@ -59,7 +62,7 @@
     "static/media/planet_3_mouseover.290c5b7a.png": "/portfolio/static/media/planet_3_mouseover.290c5b7a.png",
     "static/media/planet_4_mouseover.1fe618cc.png": "/portfolio/static/media/planet_4_mouseover.1fe618cc.png",
     "static/media/react_bubble.b521c3e2.svg": "/portfolio/static/media/react_bubble.b521c3e2.svg",
-    "static/media/rocket.bb2d7766.svg": "/portfolio/static/media/rocket.bb2d7766.svg",
+    "static/media/rocket.53a5ebe9.svg": "/portfolio/static/media/rocket.53a5ebe9.svg",
     "static/media/satelite_body.0dfa0abc.png": "/portfolio/static/media/satelite_body.0dfa0abc.png",
     "static/media/satelite_head.40fd11f0.png": "/portfolio/static/media/satelite_head.40fd11f0.png",
     "static/media/satelite_wing_1.38cdfb7d.png": "/portfolio/static/media/satelite_wing_1.38cdfb7d.png",
@@ -85,6 +88,6 @@
     "static/js/runtime-main.2a157abb.js",
     "static/js/2.c8ffbb69.chunk.js",
     "static/css/main.412724dd.chunk.css",
-    "static/js/main.5407ed8f.chunk.js"
+    "static/js/main.3f8e90a9.chunk.js"
   ]
 }
