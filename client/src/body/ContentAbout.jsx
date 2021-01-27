@@ -12,13 +12,14 @@ import astLeftArmFrontBig from '../img/ast_left_arm_1_big.png';
 import antenaUnderBig from '../img/ast_antena_under_big.png';
 import antenaBig from '../img/ast_antena_big.png';
 import antenaLight from '../img/ast_antena_light.png';
-import myResume from '../resume/권은정_프론트엔드_최신.pdf';
+import myResume from '../resume/권은정_이력서_최신.pdf';
 import bubble from '../img/bubble.png';
 import mouse from '../img/mouse.svg';
-import mouseBig from '../img/mouse_big.png';
+// import mouseBig from '../img/mouse_big.png';
 import buttonText from '../img/introduce.svg';
 
 import astFixedParts from '../img/astronaut_body_together.png';
+import click from '../img/click.png';
 
 import cursor_2 from '../img/cursor_2.cur';
 
@@ -143,6 +144,25 @@ const AstLeftArmFront = styled.div`
     transform-origin: 90% 50%;
     cursor: url(${cursor_2}), auto;
     z-index: 25;
+`;
+
+const Blink = keyframes`
+    0% { opacity: 0% }
+    50% { opacity: 80% }
+    100% { opacity: 0% }
+`;
+
+const Click = styled.div`
+    top: -15%;
+    left: 9.5%;
+    width: 30%;
+    height: 15%;
+    background-image: url(${click});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    animation: ${Blink} 1s ease infinite;
+    position: absolute;
 `;
 
 // const AstLeftArm = styled.div`
@@ -350,7 +370,7 @@ const ButtonMouse = styled.button`
     z-index: 16;
 
     &:hover {
-        background-image: url(${mouseBig});
+        transform: scale(1.05);
     }
 `;
 
@@ -372,7 +392,9 @@ export default function ContentAbout() {
                     {/* <AstLeftArm /> */}
                     <a href={myResume} download="권은정_이력서">
                     {/* 임시, 나중에 배포할 때 변경하기 */}
-                        <AstLeftArmFront />
+                        <AstLeftArmFront>
+                            <Click />
+                        </AstLeftArmFront>
                     </a>
                     {/* <AstRightArm /> */}
                     <AstAntenaUnder />

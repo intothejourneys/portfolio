@@ -18,7 +18,7 @@ const ModalWrapper = styled.div`
 const ModalFrame = styled.div`
     width: 100%;
     height: 100%;
-    bottom: 8.4%;
+    bottom: 8.3%;
     right: 19.14%;
     color: #606060;
     background-image: url(${bubbleBig});
@@ -30,10 +30,10 @@ const ModalFrame = styled.div`
 `;
 
 const ModalClose = styled.button`
-    width: 2%;
-    height: 3%;
-    bottom: 72.5%;
-    right: 27.8%;
+    width: 4%;
+    height: 6%;
+    bottom: 75.8%;
+    right: 26.9%;
     padding: 0;
     margin: 0;
     // color: #c0dee5;
@@ -89,10 +89,10 @@ const ModalText2 = styled.div`
 `;
 
 const KorToEng = styled.button`
-    width: 5%;
-    height: 3.5%;
-    bottom: 72.1%;
-    right: 66.2%;
+    width: 10%;
+    height: 7%;
+    bottom: 75.8%;
+    right: 62.7%;
     padding: 0;
     margin: 0;
     // color: #ffffff;
@@ -114,10 +114,10 @@ const KorToEng = styled.button`
 `;
 
 const EngToKor = styled.button`
-    width: 5%;
-    height: 3.5%;
-    bottom: 72.1%;
-    right: 66.2%;
+    width: 10%;
+    height: 7%;
+    bottom: 75.8%;
+    right: 62.7%;
     padding: 0;
     margin: 0;
     // color: #ffffff;

@@ -11,6 +11,14 @@ html, body, #root {
     left: 0; right: 0; /* horizontal center */
 }
 
+/* @media only screen and (max-width: 768px) {
+    html, body, #root { 
+        transform: rotate(-90deg); 
+        transform-origin: top left; 
+        position: absolute;
+    } 
+} */
+
 /* .Transition_inner:after {
     content: "";
     top: -100%;

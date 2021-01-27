@@ -285,7 +285,7 @@ const EMailBefore = styled.div`
     border-radius: 15px;
     // border-color: #606060;
     background-color: #FCF6F5FF;
-    box-shadow: inset 0 0 5px #606060;
+    box-shadow: inset 0 0 3px #606060;
     animation: ${Desolve} 1s ease;
     position: absolute;
     z-index: 20;
@@ -305,7 +305,7 @@ const EMailAfter = styled.div`
     border-radius: 15px;
     // border-color: #54FF75;
     background-color: #FCF6F5FF;
-    box-shadow: inset 0 0 5px #FFD8B0;
+    box-shadow: inset 0 0 3px #FFD8B0;
     position: absolute;
     z-index: 20;
 `;

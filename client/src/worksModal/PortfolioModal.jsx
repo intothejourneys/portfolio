@@ -2,13 +2,13 @@ import React from 'react';
 
 import styled, { keyframes } from 'styled-components';
 
-// import keyboard1 from '../img/keyboard_github.png';
+import keyboard1 from '../img/keyboard_github.png';
 import keyboard2 from '../img/keyboard_web.png';
 import keyboard3 from '../img/keyboard_blog.png';
-// import keyboard1Hover from '../img/keyboard_github_hover.png';
+import keyboard1Hover from '../img/keyboard_github_hover.png';
 import keyboard2Hover from '../img/keyboard_web_hover.png';
 import keyboard3Hover from '../img/keyboard_blog_hover.png';
-// import keyboard1Active from '../img/keyboard_github_active.png';
+import keyboard1Active from '../img/keyboard_github_active.png';
 import keyboard2Active from '../img/keyboard_web_active.png';
 import keyboard3Active from '../img/keyboard_blog_active.png';
 
@@ -224,33 +224,34 @@ const Link = styled.a`
     }
 `;
 
-// const Github = styled.a`
-//     top: 205px;
-//     left: 220px;
-//     width: 90px;
-//     height: 90px;
-//     border-color: transparent;
-//     background-color: transparent;
-//     background-image: url(${keyboard1});
-//     background-repeat: no-repeat;
-//     position: absolute;
-//     display: inline-block;
-//     outline: 0;
+const Github = styled.a`
+    top: 65%;
+    left: 25%;
+    width: 20%;
+    height: 23%;
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(${keyboard1});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: absolute;
+    display: inline-block;
+    outline: 0;
 
-//     &:hover {
-//         cursor: url(${cursor_2}), auto;
-//         background-image: url(${keyboard1Hover});
-//         background-repeat: no-repeat;
-//     }
-//     &:active {
-//         background-image: url(${keyboard1Active});
-//         background-repeat: no-repeat;
-//     }
-// `;
+    &:hover {
+        cursor: url(${cursor_2}), auto;
+        background-image: url(${keyboard1Hover});
+    }
+    &:active {
+        cursor: url(${cursor_2}), auto;
+        background-image: url(${keyboard1Active});
+    }
+`;
 
 const Blog = styled.a`
     top: 65%;
-    left: 25%;
+    left: 37.5%;
     width: 20%;
     height: 23%;
     border-color: transparent;
@@ -292,9 +293,9 @@ export default function PortfolioModal({ isPortfolioModalOpen }) {
                         <Span2> ◽️ 주요 작업 내역 - 반응형 웹, 배경 효과, 인트로 페이지 트렌지션, 다크 모드 옵션,</Span2>
                         <Span3>멀티플 토글 관리, CSS 애니메이션 등</Span3> */}
                         <All />
-                        <Link target="_blank" href=""/>
-                        {/* <Github target="_blank" href="https://github.com/intothejourneys/portfolio"/> */}
-                        <Blog target="_blank" href=""/>
+                        <Link target="_blank" href="https://intothejourneys.github.io/portfolio"/>
+                        <Github target="_blank" href="https://github.com/intothejourneys/portfolio"/>
+                        <Blog target="_blank" href="https://intothejourneys.tistory.com/"/>
                     </div>
                 </Contents>
             </Wrapper>
