@@ -392,7 +392,8 @@ export default function ContentAbout() {
                     {/* <AstLeftArm /> */}
                     {/* <a href={myResume} download="권은정_이력서"> */}
                     {/* 임시, 나중에 배포할 때 변경하기 */}
-                        <AstLeftArmFront onClick={alert('잠시 비공개 중입니다😭')}>
+                        {/* <AstLeftArmFront onClick={alert('잠시 비공개 중입니다😭')}> */}
+                        <AstLeftArmFront onMouseOver={alert('잠시 비공개 중입니다😭')}>
                             <Click />
                         </AstLeftArmFront>
                     {/* </a> */}
