@@ -13,7 +13,7 @@ import antenaUnderBig from '../img/ast_antena_under_big.png';
 import antenaBig from '../img/ast_antena_big.png';
 import antenaLight from '../img/ast_antena_light.png';
 // import myResume from '../resume/권은정_프론트엔드.pdf';
-import myResume from '../resume/resumeHide.png';
+import myResume from '../img/resumeHide.png';
 import bubble from '../img/bubble.png';
 import mouse from '../img/mouse.svg';
 // import mouseBig from '../img/mouse_big.png';
