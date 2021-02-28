@@ -392,7 +392,7 @@ export default function ContentAbout() {
                     <AstBody /> */}
                     {/* <AstLeftArm /> */}
                     {/* <a href={myResume} download="권은정_이력서"> */}
-                    <a href={myResume} download="권은정_이력서_잠시_비공개">
+                    <a href={myResume} target="_blank">
                         {/* <AstLeftArmFront onClick={alert('잠시 비공개 중입니다😭')}> */}
                         <AstLeftArmFront>
                             <Click />
