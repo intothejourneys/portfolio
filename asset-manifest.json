@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a204541b.chunk.css",
-    "main.js": "/portfolio/static/js/main.a5239510.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a5239510.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.7b7490cf.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7b7490cf.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.2a157abb.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.2a157abb.js.map",
     "static/js/2.c8ffbb69.chunk.js": "/portfolio/static/js/2.c8ffbb69.chunk.js",
@@ -17,7 +17,7 @@
     "static/media/CONTACT.a727ec1d.svg": "/portfolio/static/media/CONTACT.a727ec1d.svg",
     "static/media/CONTACT_hover.3103961e.svg": "/portfolio/static/media/CONTACT_hover.3103961e.svg",
     "static/media/ENG.5d61bfe8.svg": "/portfolio/static/media/ENG.5d61bfe8.svg",
-    "static/media/EnglishText.2fc2c095.svg": "/portfolio/static/media/EnglishText.2fc2c095.svg",
+    "static/media/EnglishText.326836ba.svg": "/portfolio/static/media/EnglishText.326836ba.svg",
     "static/media/KOR.4e4b30dd.svg": "/portfolio/static/media/KOR.4e4b30dd.svg",
     "static/media/SKILLS.13212c3c.svg": "/portfolio/static/media/SKILLS.13212c3c.svg",
     "static/media/SKILLS_hover.92006f1a.svg": "/portfolio/static/media/SKILLS_hover.92006f1a.svg",
@@ -52,7 +52,7 @@
     "static/media/html_bubble.fcad868e.svg": "/portfolio/static/media/html_bubble.fcad868e.svg",
     "static/media/introduce.980f89bd.svg": "/portfolio/static/media/introduce.980f89bd.svg",
     "static/media/js_bubble.804c39f9.svg": "/portfolio/static/media/js_bubble.804c39f9.svg",
-    "static/media/koreanText.8de3ae90.svg": "/portfolio/static/media/koreanText.8de3ae90.svg",
+    "static/media/koreanText.4d645528.svg": "/portfolio/static/media/koreanText.4d645528.svg",
     "static/media/lightMode.087214b8.svg": "/portfolio/static/media/lightMode.087214b8.svg",
     "static/media/lightMode_hover.1e68a63b.svg": "/portfolio/static/media/lightMode_hover.1e68a63b.svg",
     "static/media/mainText.c297dcfa.svg": "/portfolio/static/media/mainText.c297dcfa.svg",
@@ -88,6 +88,6 @@
     "static/js/runtime-main.2a157abb.js",
     "static/js/2.c8ffbb69.chunk.js",
     "static/css/main.a204541b.chunk.css",
-    "static/js/main.a5239510.chunk.js"
+    "static/js/main.7b7490cf.chunk.js"
   ]
 }
