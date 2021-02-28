@@ -12,7 +12,8 @@ import astLeftArmFrontBig from '../img/ast_left_arm_1_big.png';
 import antenaUnderBig from '../img/ast_antena_under_big.png';
 import antenaBig from '../img/ast_antena_big.png';
 import antenaLight from '../img/ast_antena_light.png';
-import myResume from '../resume/권은정_프론트엔드.pdf';
+// import myResume from '../resume/권은정_프론트엔드.pdf';
+import myResume from '../resume/resumeHide.png';
 import bubble from '../img/bubble.png';
 import mouse from '../img/mouse.svg';
 // import mouseBig from '../img/mouse_big.png';
@@ -391,12 +392,12 @@ export default function ContentAbout() {
                     <AstBody /> */}
                     {/* <AstLeftArm /> */}
                     {/* <a href={myResume} download="권은정_이력서"> */}
-                    {/* 임시, 나중에 배포할 때 변경하기 */}
+                    <a href={myResume} download="권은정_이력서_잠시_비공개">
                         {/* <AstLeftArmFront onClick={alert('잠시 비공개 중입니다😭')}> */}
-                        <AstLeftArmFront onMouseOver={alert('잠시 비공개 중입니다😭')}>
+                        <AstLeftArmFront>
                             <Click />
                         </AstLeftArmFront>
-                    {/* </a> */}
+                    </a>
                     {/* <AstRightArm /> */}
                     <AstAntenaUnder />
                     <AstAntena />
